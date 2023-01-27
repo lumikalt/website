@@ -1,0 +1,178 @@
+@import "./variables";
+
+* {
+  unicode-bidi: isolate;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  background: black;
+  color: white;
+  font-family: "FORCED SQUARE", monospace;
+}
+
+main {
+  text-shadow: 0 0 2px #0f0, -2px 0 2px #f00, 2px 0 2px #00f;
+  text-align: center;
+
+  display: flex;
+  vertical-align: middle;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  z-index: 3;
+
+  .spacing {
+    padding-right: 15px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/bg.webp") center / cover;
+  filter: brightness(30%);
+  z-index: -1;
+}
+
+.noise {
+  z-index: 1 !important;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.35;
+
+  .inner {
+    height: 100%;
+    width: 100%;
+    opacity: 0.25;
+    background-image: url("/static.gif");
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 144px;
+  width: 144px;
+  position: relative;
+  border: 1px solid $Border;
+
+  background: linear-gradient(to bottom,
+      #5ccefa,
+      #f6a8b7 30%,
+      #fff 50%,
+      #f6a8b7 70%,
+      #5ccefa);
+
+  .inner {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border-radius: 50%;
+    width: 128;
+    height: 128;
+  }
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+
+  a {
+    height: 40px;
+    width: 40px;
+
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  img {
+    display: inline-block;
+    filter: brightness(50%);
+
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+}
+
+footer {
+
+  a,
+  a:visited,
+  a:link,
+  a:hover,
+  a:active {
+    color: $AccentSecondary;
+  }
+
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+
+  main,
+  container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .spacing {
+    padding-bottom: 10px;
+  }
+}
