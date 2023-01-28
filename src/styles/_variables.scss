@@ -9,22 +9,21 @@ $AccentSecondary: #b5e8e0;
 $Border: #575268;
 
 @font-face {
-  font-family: "FORCED SQUARE";
-  src: url("/font/FORCEDSQUARE.woff2") format("woff2"),
-    url("/font/FORCEDSQUARE.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
   font-family: "SpecialElite";
   src: url("/font/SpecialElite.ttf");
   font-style: normal;
 }
 
 @font-face {
-  font-family: "ReallyLove";
-  src: url("/font/ReallyLove.ttf");
+  font-family: "JetBrainsMono";
+  src: url("/font/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-variant-ligatures: normal;
+}
+
+@font-face {
+  font-family: "CharterBT";
+  src: url("/font/CharterBT.ttf");
   font-style: normal;
 }
