@@ -1,5 +1,5 @@
 {
-  "name": "@example/blog",
+  "name": "lumi_homepage",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -11,13 +11,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.15.1",
-    "@astrojs/rss": "^2.1.0",
-    "@astrojs/sitemap": "^1.0.0",
-    "astro": "^2.0.2",
-    "rehype-katex": "^6.0.2",
-    "remark-math": "^5.1.1",
-    "rollup": "^3.11.0",
-    "sass": "^1.57.1"
+    "@astrojs/mdx": "latest",
+    "@astrojs/rss": "latest",
+    "@astrojs/sitemap": "latest",
+    "astro": "latest",
+    "rehype-katex": "latest",
+    "remark-math": "latest",
+    "rollup": "latest",
+    "sass": "latest"
   }
 }

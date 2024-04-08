@@ -3,6 +3,7 @@ const title = "Lumi!";
 const description = "Personal website + blog";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
+import { Image } from "astro:assets";
 import "../styles/home.scss";
 ---
 
@@ -44,12 +45,13 @@ import "../styles/home.scss";
     </div>
     <main>
       <div class="avatar">
-        <img
+        <Image
           src="https://avatars.githubusercontent.com/u/99078103"
           alt=""
           width="128"
           height="128"
           class="inner"
+          loading="eager"
         />
       </div>
       <div class="spacing"></div>
