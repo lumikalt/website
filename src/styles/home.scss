@@ -95,6 +95,9 @@ main {
 .avatar {
   border-radius: 40%;
   box-shadow: 0 0 50px #fff, -20px 0 80px #f6a8b7, 20px 0 80px #5ccefa;
+
+  max-width: 144px;
+  max-height: 144px;
 }
 
 .links {
@@ -130,14 +133,11 @@ footer {
   right: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 100vh) {
 
   main,
   container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
   }
 
   .spacing {
@@ -170,5 +170,32 @@ footer {
     right: 0;
 
     font-size: xx-small;
+  }
+}
+
+@media screen and (min-width: 900px) and (min-width: 100vh) {
+  .container {
+
+    h1,
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .links a {
+    font-size: 2.6rem;
+  }
+
+  .avatar {
+    max-width: 268px;
+    max-height: 268px;
   }
 }
