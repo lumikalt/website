@@ -143,4 +143,32 @@ footer {
   .spacing {
     padding-bottom: 10px;
   }
+
+  .links {
+    padding-top: 5px;
+    grid-template-columns: 1fr 1fr;
+
+    a {
+      font-size: 1.5rem;
+      padding-left: 0px;
+      padding-right: 0px;
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin-left: 20px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(4) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  footer {
+    bottom: 0;
+    right: 0;
+
+    font-size: xx-small;
+  }
 }
