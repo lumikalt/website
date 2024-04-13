@@ -149,18 +149,19 @@ footer {
     grid-template-columns: 1fr 1fr;
 
     a {
-      font-size: 1.5rem;
-      padding-left: 0px;
-      padding-right: 0px;
+      font-size: 1.6rem;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 10px;
 
       &:nth-child(1),
       &:nth-child(3) {
-        margin-left: 20px;
+        text-align: right;
       }
 
       &:nth-child(2),
       &:nth-child(4) {
-        margin-right: 20px;
+        text-align: left;
       }
     }
   }
