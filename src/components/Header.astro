@@ -1,6 +1,13 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+
+let { pathname } = Astro.url;
+if (pathname.endsWith("/") && pathname !== "/") {
+  pathname = pathname.slice(0, -1);
+}
+
+let up: string = pathname.replace(/(.*)\/.*/, "$1");
 ---
 
 <header>
@@ -10,18 +17,7 @@ import { SITE_TITLE } from "../consts";
   <nav>
     <HeaderLink href="/">Home</HeaderLink>
     <HeaderLink href="/blog">Blog</HeaderLink>
-    <HeaderLink
-      href="https://twitter.com/lumikalt"
-      target="_blank"
-      rel="noopener noreferrer">
-      Twitter
-    </HeaderLink>
-    <HeaderLink
-      href="https://github.com/lumikalt"
-      target="_blank"
-      rel="noopener noreferrer">
-      GitHub
-    </HeaderLink>
+    {up === "" || up === "/blog" ? null : <HeaderLink href={up}>Up</HeaderLink>}
   </nav>
 </header>
 <style>

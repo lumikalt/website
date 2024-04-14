@@ -14,9 +14,15 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
   a {
     display: inline-block;
     text-decoration: none;
-  }
-  a.active {
-    font-weight: bolder;
-    text-decoration: underline;
+
+    &.active {
+      font-weight: bolder;
+      text-decoration: underline;
+      pointer-events: none;
+    }
+
+    &, &:visited {
+      color: #b5e8e0; /* AccentSecondary */
+    }
   }
 </style>
