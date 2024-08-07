@@ -4,6 +4,8 @@
   unicode-bidi: isolate;
   margin: 0;
   padding: 0;
+
+  user-select: none;
 }
 
 html,
@@ -45,7 +47,6 @@ main {
 .container {
   display: flex;
   flex-direction: column;
-  user-select: none;
 
   h1,
   h2 {
@@ -73,7 +74,7 @@ main {
 }
 
 .noise {
-  pointer-events: none !important;
+  // pointer-events: none !important;
   z-index: 1 !important;
   position: fixed;
   height: 100%;
@@ -120,6 +121,9 @@ main {
 }
 
 footer {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
 
   a,
   a:visited,
@@ -128,10 +132,6 @@ footer {
   a:active {
     color: $AccentSecondary;
   }
-
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
 }
 
 @media screen and (max-width: 100vh) {
