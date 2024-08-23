@@ -4,8 +4,6 @@
   unicode-bidi: isolate;
   margin: 0;
   padding: 0;
-
-  user-select: none;
 }
 
 html,
@@ -74,7 +72,6 @@ main {
 }
 
 .noise {
-  // pointer-events: none !important;
   z-index: 1 !important;
   position: fixed;
   height: 100%;
@@ -84,6 +81,8 @@ main {
   right: 0;
   left: 0;
   opacity: 0.35;
+
+  pointer-events: none;
 
   .inner {
     height: 100%;
@@ -95,6 +94,8 @@ main {
 }
 
 .avatar {
+  user-select: none;
+
   border-radius: 40%;
   box-shadow: 0 0 50px #fff, -20px 0 80px #f6a8b7, 20px 0 80px #5ccefa;
 
@@ -106,6 +107,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
+
 
   a {
     font-size: 1.3rem;
