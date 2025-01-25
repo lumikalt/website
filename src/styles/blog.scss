@@ -1,0 +1,145 @@
+@import "./variables";
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Wonderly;
+  letter-spacing: 1px;
+
+  background: $Background;
+  color: $Foreground;
+
+  margin: auto;
+  padding: 20px;
+  max-width: 120ch;
+  text-align: justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: $Accent;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+  color: $ForegroundSecondary;
+  margin: 2rem 0 0 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: $ForegroundSecondary;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+.about,
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  // padding: 0;
+  background: $Background;
+  color: $Foreground;
+  font-family: Wonderly;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.about {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  justify-content: justify;
+  align-items: center;
+
+  .puppy {
+    padding-inline-start: 10px;
+    color: tan;
+    transition: transform 0.5s ease-in-out, text-shadow 0.8s ease-in-out;
+
+    &:hover {
+      transform: scale(1.5) translateY(-5px);
+      // make background a little darker, stronger closer to the text
+      text-shadow:
+        0 0 100px rgba(0, 0, 0, 1),
+        0 0 80px rgba(0, 0, 0, 1),
+        0 0 60px rgba(0, 0, 0, 1),
+        0 0 40px rgba(0, 0, 0, 1),
+        0 0 20px rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+a {
+  text-decoration-style: dotted;
+  color: $AccentSecondary;
+
+  &:visited {
+    color: $Accent;
+  }
+}
+
+nav a {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+textarea {
+  width: 100%;
+  font-size: 19px;
+}
+
+content {
+  line-height: 1.6;
+}
+
+table {
+  width: 100%;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+code {
+  padding: 2px 2px;
+  letter-spacing: 0;
+  background-color: $BackgroundDarker;
+  font-size: 16px;
+  font-family: "JetBrainsMono";
+}
+
+pre {
+  padding: .5rem;
+  max-width: 80ch;
+
+  >code {
+    font-size: 18px;
+  }
+}
+
+blockquote {
+  border: 1px dotted $Border;
+  color: $Accent;
+  padding: 2px 20px 2px 20px;
+  margin: 0px;
+  font-style: italic;
+  border-radius: 20px;
+}

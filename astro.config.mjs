@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://lumikalt.vercel.app",
+  site: "https://puppy.fail",
   integrations: [mdx(), sitemap()],
   markdown: {
     remarkPlugins: [remarkMath],
