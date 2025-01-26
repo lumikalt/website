@@ -18,6 +18,7 @@
     "rehype-katex": "latest",
     "remark-math": "latest",
     "rollup": "latest",
-    "sass": "latest"
+    "sass": "latest",
+    "sharp": "latest"
   }
 }
