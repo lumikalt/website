@@ -4,7 +4,8 @@ const description = "*woof*";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 import { Image } from "astro:assets";
-import "../styles/home.scss";
+import puppy from "../../public/puppy.png";
+import "../styles/newhome.scss";
 
 const MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.2425;
 const years_old: number = Math.floor(
@@ -44,57 +45,14 @@ const years_old: number = Math.floor(
   </head>
 
   <body>
-    <div class="bg"></div>
-    <div class="noise">
-      <div class="inner"></div>
-    </div>
     <main>
-      <Image
-        src="https://avatars.githubusercontent.com/u/99078103"
-        alt=""
-        height="268"
-        width="268"
-        loading="eager"
-        class="avatar"
-        draggable="false"
-      />
-      <div class="spacing"></div>
-      <div class="container">
-        <h1>🐾lumi</h1>
-        <h2>it/she 🏳️‍⚧️ {years_old}yo</h2>
-        <h2>// *woof woof*</h2>
-        <div class="links">
-          <a href="/blog">
-            📰
-          </a>
-          <a
-            href="https://github.com/lumikalt"
-            target="_blank"
-            rel="noopener noreferrer">
-            🐙
-          </a>
-          <a
-            href="https://twitter.com/lumikalt"
-            target="_blank"
-            rel="noopener noreferrer">
-            🐦
-          </a>
-          <a
-            href="mailto:lumi.mia.kalt@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            📬
-          </a>
-        </div>
+      <div class="avatar">
+        <Image src={puppy} class="i1" alt="" height="500" width="500" loading="lazy" draggable="false" />
+        <Image src={puppy} class="i2" alt="" height="500" width="500" loading="lazy" draggable="false" />
+        <Image src={puppy} class="i3" alt="" height="500" width="500" loading="lazy" draggable="false" />
+        <Image src={puppy} class="i4" alt="" height="500" width="500" loading="lazy" draggable="false" />
       </div>
+      <span class="about">a {years_old} yo <abbr title="yes, really." class="puppy">puppy</abbr>thing from portugal.</span>
     </main>
-    <footer>
-      <a
-        href="https://twitter.com/ecryf_art/status/1526844235277709312"
-        target="_blank"
-        rel="noopener noreferrer">
-        bg src
-      </a>
-    </footer>
   </body>
 </html>

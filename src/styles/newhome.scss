@@ -1,0 +1,103 @@
+@use "sass:math";
+@import "./variables";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
+  font-family: Wonderly;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  position: relative;
+
+
+  *:not(:first-child) {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    offset-path: circle(10px at 50% 50%);
+    offset-rotate: 0deg;
+    animation-delay: 0s;
+  }
+
+  .i1 {
+    z-index: 1;
+    position: relative;
+    filter: brightness(0) blur(1px);
+  }
+
+  /* filters from https://codepen.io/sosuke/pen/Pjoqqp */
+
+  // red
+  .i2 {
+    filter: invert(19%) sepia(100%) saturate(6457%) hue-rotate(359deg) brightness(101%) contrast(119%) blur(10px) opacity(0.5);
+    animation: orbit1 5s infinite alternate ease-in-out;
+    -moz-animation: orbit1 5s infinite alternate ease-in-out;
+  }
+
+  // green
+  .i3 {
+    filter: invert(47%) sepia(52%) saturate(2266%) hue-rotate(89deg) brightness(123%) contrast(122%) blur(10px) opacity(0.5);
+    animation: orbit2 5s infinite linear;
+    -moz-animation: orbit2 5s infinite linear;
+  }
+
+  // blue
+  .i4 {
+    filter: invert(8%) sepia(100%) saturate(7458%) hue-rotate(247deg) brightness(95%) contrast(144%) blur(10px) opacity(0.5);
+    animation: orbit3 5s infinite linear;
+    -moz-animation: orbit3 5s infinite linear;
+  }
+}
+
+@keyframes orbit1 {
+  from {
+    offset-distance: 0%;
+  }
+
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes orbit2 {
+  0% {
+    offset-distance: 33%;
+  }
+
+  65% {
+    offset-distance: 100%;
+  }
+
+  66% {
+    offset-distance: 0%;
+  }
+
+  100% {
+    offset-distance: 33%;
+  }
+}
+
+@keyframes orbit3 {
+  0% {
+    offset-distance: 66%;
+  }
+
+  32% {
+    offset-distance: 100%;
+  }
+
+  33% {
+    offset-distance: 0%;
+  }
+
+  100% {
+    offset-distance: 66%;
+  }
+}
