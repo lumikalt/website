@@ -1,26 +1,34 @@
 @use "./variables" as *;
 
-body {
+main, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   font-family: Wonderly;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.gb {
-  border-image-repeat: repeat;
-  animation: movebg 5s linear infinite;
+.bg {
+  overflow: hidden;
+  position: absolute;
+  width: 3 * 1920px;
+  height: 3 * 1920px;
+
+  .image {
+    width: 100%;
+    height: 100%;
+    background-size: .5 * 1920px .5 * 1920px;
+    animation: movebg 50s linear infinite;
+  }
 }
 
 @keyframes movebg {
   from {
-    background-position: bottom left;
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    background-position: top right;
+    transform: translate3d(-1920px, -1920px, 0);
   }
 }
 
