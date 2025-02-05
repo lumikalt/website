@@ -1,20 +1,31 @@
-@use "sass:math";
-@import "./variables";
+@use "./variables" as *;
 
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
-  color: whitesmoke;
   font-family: Wonderly;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.gb {
+  border-image-repeat: repeat;
+  animation: movebg 5s linear infinite;
+}
+
+@keyframes movebg {
+  from {
+    background-position: bottom left;
+  }
+
+  to {
+    background-position: top right;
+  }
+}
+
 .avatar {
   position: relative;
-
 
   *:not(:first-child) {
     position: absolute;
@@ -23,7 +34,6 @@ body {
     left: 0;
     offset-path: circle(10px at 50% 50%);
     offset-rotate: 0deg;
-    animation-delay: 0s;
   }
 
   .i1 {
