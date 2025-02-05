@@ -1,11 +1,13 @@
 ---
+import "../styles/newhome.scss";
+
 const title = "lumi";
 const description = "*woof*";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-import { Image } from "astro:assets";
-import puppy from "../../public/puppy.png";
-import "../styles/newhome.scss";
+import { Image, getImage } from "astro:assets";
+import starry from "../../public/starry.jpg";
+const starrybg = await getImage({ src: starry });
 
 const MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.2425;
 const years_old: number = Math.floor(
@@ -46,11 +48,8 @@ const years_old: number = Math.floor(
 
   <body>
     <main>
-      <div class="avatar">
-        <Image src={puppy} class="i1" alt="" height="500" width="500" loading="lazy" draggable="false" />
-        <Image src={puppy} class="i2" alt="" height="500" width="500" loading="lazy" draggable="false" />
-        <Image src={puppy} class="i3" alt="" height="500" width="500" loading="lazy" draggable="false" />
-        <Image src={puppy} class="i4" alt="" height="500" width="500" loading="lazy" draggable="false" />
+      <div class="bg">
+        <div class="image" style={`background-image: url(${starrybg.src})`}></div>
       </div>
     </main>
   </body>
