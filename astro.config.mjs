@@ -8,13 +8,13 @@ import sitemap from "@astrojs/sitemap";
 
 import vercel from "@astrojs/vercel";
 
-import criticalCSS from "astro-critical-css";
+import critters from "astro-critters";
 import rename from "astro-rename";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://puppy.fail",
-  integrations: [mdx(), sitemap(), criticalCSS(), rename()],
+  integrations: [mdx(), sitemap(), critters(), rename()],
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex]
