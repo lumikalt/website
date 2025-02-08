@@ -5,9 +5,8 @@ const title = "lumi";
 const description = "*woof*";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-import { Image, getImage } from "astro:assets";
+import { getImage } from "astro:assets";
 import starry from "../../public/starry.jpg";
-import puppy from "../../public/puppy_mask.png";
 const starrybg = await getImage({ src: starry });
 
 const MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.2425;
@@ -54,44 +53,6 @@ const years_old: number = Math.floor(
 
     <!-- content -->
     <main lang="en">
-      <div class="avatar">
-        <Image
-          src={puppy}
-          class="i1"
-          alt="a puppy cutout"
-          height="300"
-          width="300"
-          loading="eager"
-          draggable="false"
-        />
-        <Image
-          src={puppy}
-          class="i2"
-          alt=""
-          height="300"
-          width="300"
-          loading="eager"
-          draggable="false"
-        />
-        <Image
-          src={puppy}
-          class="i3"
-          alt=""
-          height="300"
-          width="300"
-          loading="eager"
-          draggable="false"
-        />
-        <Image
-          src={puppy}
-          class="i4"
-          alt=""
-          height="300"
-          width="300"
-          loading="eager"
-          draggable="false"
-        />
-      </div>
       <div class="title">
         <h1>lumi</h1>
         <a href="/blog">📰</a>
