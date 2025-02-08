@@ -23,7 +23,7 @@
     "sharp": "latest",
     "autoprefixer": "latest",
     "postcss": "latest",
-    "astro-critical-css": "latest",
+    "astro-critters": "latest",
     "astro-rename": "latest"
   }
 }
