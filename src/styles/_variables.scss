@@ -1,7 +1,7 @@
 // Colors: Catppuccin
 $Foreground: #cdd6f4;
 $ForegroundSecondary: #96cdfb;
-$Background: #1E1E2E;
+$Background: #1e1e2e;
 $BackgroundSecondary: #181825;
 $BackgroundDarker: #101019;
 $Accent: #f5c2e7;
@@ -38,4 +38,10 @@ $Border: #575268;
   font-family: Wonderly;
   src: url("/font/Wonderly.otf") format("opentype");
   font-style: normal;
+}
+
+@font-face {
+  font-family: Cookies;
+  src: url("/font/Cookies.otf") format("opentype"),
+    url("/font/Cookies.ttf") format("truetype");
 }
