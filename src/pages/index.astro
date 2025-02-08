@@ -1,10 +1,14 @@
 ---
+import "../styles/home.scss";
+
 const title = "lumi";
 const description = "*woof*";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-import { Image } from "astro:assets";
-import "../styles/home.scss";
+import { Image, getImage } from "astro:assets";
+import starry from "../../public/starry.jpg";
+import puppy from "../../public/puppy_mask.png";
+const starrybg = await getImage({ src: starry });
 
 const MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.2425;
 const years_old: number = Math.floor(
@@ -28,73 +32,97 @@ const years_old: number = Math.floor(
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="author" content="Lumi Kalt" />
+    <meta name="author" content="lumi" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-
     <!-- Twitter -->
     <meta property="twitter:card" content="summary" />
-    <meta property="twitter:url" content={Astro.url} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
   </head>
 
   <body>
-    <div class="bg"></div>
-    <div class="noise">
-      <div class="inner"></div>
-    </div>
-    <main>
-      <Image
-        src="https://avatars.githubusercontent.com/u/99078103"
-        alt=""
-        height="268"
-        width="268"
-        loading="eager"
-        class="avatar"
-        draggable="false"
-      />
-      <div class="spacing"></div>
-      <div class="container">
-        <h1>🐾lumi</h1>
-        <h2>it/she 🏳️‍⚧️ {years_old}yo</h2>
-        <h2>// *woof woof*</h2>
-        <div class="links">
-          <a href="/blog">
-            📰
-          </a>
-          <a
-            href="https://github.com/lumikalt"
-            target="_blank"
-            rel="noopener noreferrer">
-            🐙
-          </a>
-          <a
-            href="https://twitter.com/lumikalt"
-            target="_blank"
-            rel="noopener noreferrer">
-            🐦
-          </a>
-          <a
-            href="mailto:lumi.mia.kalt@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            📬
-          </a>
+    <!-- background -->
+    <div class="bgcontainer">
+      <div class="bg">
+        <div class="image" style={`background-image: url(${starrybg.src})`}>
         </div>
       </div>
+    </div>
+
+    <!-- content -->
+    <main lang="en">
+      <div class="avatar">
+        <Image
+          src={puppy}
+          class="i1"
+          alt="a puppy cutout"
+          height="300"
+          width="300"
+          loading="eager"
+          draggable="false"
+        />
+        <Image
+          src={puppy}
+          class="i2"
+          alt=""
+          height="300"
+          width="300"
+          loading="eager"
+          draggable="false"
+        />
+        <Image
+          src={puppy}
+          class="i3"
+          alt=""
+          height="300"
+          width="300"
+          loading="eager"
+          draggable="false"
+        />
+        <Image
+          src={puppy}
+          class="i4"
+          alt=""
+          height="300"
+          width="300"
+          loading="eager"
+          draggable="false"
+        />
+      </div>
+      <div class="title">
+        <h1>lumi</h1>
+        <a href="/blog">📰</a>
+      </div>
+      <div class="text">
+        <p>
+          a {years_old} yo <abbr title="*woof*" class="glitch">puppy</abbr
+          >thing.
+        </p>
+        <p>
+          trans girly, has the best <span class="gf">gf</span>. very needy and
+          needs lots of physical affection. especially the kind you'd give to a <span
+            class="glitch">puppy</span
+          >.
+        </p>
+        <p>
+          talks in 3rd person when comfy, sometimes. a bit childish and
+          immature, do treat it as such. no <span class="strikethrough"
+            >mature</span
+          > stuff like <span class="strikethrough">woman</span>, <span
+            class="strikethrough">miss</span
+          >, <span class="strikethrough">maam</span>, <span
+            class="strikethrough">beautiful</span
+          >, <span class="strikethrough">hot</span>, etc. girl, cute, dummy,
+          puppy are what makes its tail wag.
+        </p>
+        <p>
+          sometimes programs. not as often anymore. stopped being enjoyable
+          almost always.
+        </p>
+      </div>
     </main>
-    <footer>
-      <a
-        href="https://twitter.com/ecryf_art/status/1526844235277709312"
-        target="_blank"
-        rel="noopener noreferrer">
-        bg src
-      </a>
-    </footer>
   </body>
 </html>
