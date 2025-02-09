@@ -16,13 +16,12 @@
     "@astrojs/sitemap": "latest",
     "@astrojs/vercel": "latest",
     "astro": "latest",
+    "autoprefixer": "latest",
+    "cssnano": "latest",
     "rehype-katex": "latest",
     "remark-math": "latest",
     "rollup": "latest",
     "sass": "latest",
-    "sharp": "latest",
-    "autoprefixer": "latest",
-    "postcss": "latest",
-    "cssnano": "latest"
+    "sharp": "latest"
   }
 }

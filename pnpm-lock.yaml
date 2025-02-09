@@ -26,9 +26,6 @@ dependencies:
   cssnano:
     specifier: latest
     version: 7.0.6(postcss@8.5.1)
-  postcss:
-    specifier: latest
-    version: 8.5.1
   rehype-katex:
     specifier: latest
     version: 7.0.1
