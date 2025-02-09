@@ -7,9 +7,8 @@ body {
   width: 100%;
   height: 100%;
 
-  flex-flow: column wrap;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -61,17 +60,31 @@ main {
   flex-flow: column wrap;
   max-width: 120ch;
   height: fit-content;
-  // padding-block: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0 0 30px 30px;
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+}
+
+a {
+  color: $AccentSecondary;
+  text-decoration: none;
+  transition: color 0.25s ease-in;
+
+  &:visited {
+    color: $AccentSecondary;
+  }
+
+  &:hover {
+    color: $Accent;
+  }
 }
 
 .title {
   inset: 0;
   margin: 0;
   display: flex;
+  justify-content: space-between;
   font-family: Cookies;
   letter-spacing: 1px;
   font-size: 3rem;
@@ -92,26 +105,54 @@ main > .text {
   font-size: 2.2rem;
   text-align: justify;
 
+  ul,
+  & > p:has(+ ul) {
+    margin-block: 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li::marker {
+    content: "~ ";
+    font-family: Cookies;
+    font-size: 1.5rem;
+  }
+
   .glitch {
-    // font-family: DigitalGlitch;
-    // font-size: 0.8rem;
-    // color: $Accent;
+    will-change: transform;
     text-shadow: 0.05em 0 0 $Accent, -0.03em -0.04em 0 $AccentSecondary,
       0.025em 0.04em 0 $Border;
-    animation: glitch 1s infinite;
+    animation: glitch 800ms infinite;
   }
 
   .gf {
-    color: $Accent;
-    &::after {
-      content: "";
+    position: relative;
+
+    &::before, &::after {
+      content: "<3";
+      color: $Accent;
+      position: absolute;
       scale: 0;
-      transition: scale 0.5s ease-in;
+      visibility: hidden;
+      transition: all 0.5s ease-in;
     }
 
+    &::before {
+      top: -0.5em;
+      left: -0.5em;
+    }
+
+    &::after {
+      bottom: -0.5em;
+      right: -0.5em;
+    }
+
+    &:hover::before,
     &:hover::after {
-      content: "<3";
       scale: 1;
+      visibility: visible;
     }
   }
 
@@ -189,5 +230,16 @@ main > .text {
   100% {
     text-shadow: -0.05em 0 0 $Accent, -0.025em -0.04em 0 $Accent,
       -0.04em -0.025em 0 $Border;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch {
+    animation: none;
+  }
+
+  .strikethrough {
+    animation: none;
+    text-decoration: line-through;
   }
 }
