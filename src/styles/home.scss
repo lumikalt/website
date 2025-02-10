@@ -138,7 +138,8 @@ a {
   .gf {
     position: relative;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: "<3";
       color: $Accent;
       position: absolute;
@@ -165,13 +166,13 @@ a {
   }
 
   .strikethrough {
-    will-change: transform;
     display: inline-block;
     position: relative;
     transition: all 0.5s ease-in;
 
     &::after {
       content: "";
+      will-change: transform;
       position: absolute;
       display: block;
       width: 100%;
