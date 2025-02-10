@@ -1,26 +1,33 @@
 ---
-const { text } = Astro.props;
+const { text, tooltip, className } = Astro.props;
 ---
 
 <span class="tooltip">
-  <slot />
-  <span class="tooltiptext">{text}</span>
+  <span class:list={[className, "innertext"]}>{text}</span>
+  <span class="tooltiptext">{tooltip}</span>
 </span>
 
-<style>
+<style define:vars={{ text: `"${text}"` }}>
   .tooltip {
     position: relative;
-    display: inline-block;
+  }
 
-    :not(.tooltiptext) {
-      border-bottom: 3px dotted #cdd6f4;
-    }
+  .innertext::after {
+    all: initial;
+    content: var(--text);
+    position: absolute;
+    top: -9px;
+    left: 0px;
+    font: inherit;
+    color: #0000;
+    border-bottom: 4px dotted #cdd6f4;
   }
 
   .tooltiptext {
     visibility: hidden;
     position: absolute;
     width: max-content;
+    height: min-content;
     background-color: #1e1e2e;
     color: #cdd6f4;
     text-align: center;
