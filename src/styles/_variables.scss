@@ -12,6 +12,7 @@ $Border: #575268;
   font-family: "SpecialElite";
   src: url("/font/SpecialElite.ttf");
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,16 +21,19 @@ $Border: #575268;
   font-weight: 500;
   font-style: normal;
   font-variant-ligatures: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "DigitalGlitch";
   src: url("/font/Digital Glitch Demo.ttf") format("truetype");
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Wonderly;
   src: url("/font/Wonderly.otf") format("opentype");
   font-style: normal;
+  font-display: swap;
 }
