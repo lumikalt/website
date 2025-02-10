@@ -54,15 +54,14 @@ const years_old: number = Math.floor(
 
     <!-- content -->
     <main lang="en">
+      <div class="upperbar"></div>
       <div class="title">
         <h1>lumi }</h1>
         <a href="/blog">“</a>
       </div>
       <div class="text">
         <p>
-          a {years_old} yo <TooltipText text="fem">
-            <span class="glitch">puppy</span>
-          </TooltipText>thing.
+          a {years_old} yo <TooltipText className="glitch" text="puppy" tooltip="fem" />thing.
         </p>
         <p>
           trans girly w the best <span class="gf">gf</span>. very needy for lots
@@ -90,8 +89,10 @@ const years_old: number = Math.floor(
               > is adorable.
             </li>
             <li>
-              rust: bestest lang. proudest code is lumi's
-              parser/assembler/emulator for risc-v.
+              rust: bestest lang. proudest code is an <a
+                href="https://github.com/lumikalt/scratchy">emulator</a
+              >
+              for risc-v asm.
             </li>
           </ul>
         </p>
