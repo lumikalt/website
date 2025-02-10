@@ -41,6 +41,12 @@ const years_old: number = Math.floor(
     <meta property="og:description" content={description} />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary" />
+    <style is:global>
+      @font-face {
+        font-family: Cookies;
+        src: url("/font/Cookies.otf") format("opentype");
+      }
+    </style>
   </head>
 
   <body>
@@ -61,7 +67,11 @@ const years_old: number = Math.floor(
       </div>
       <div class="text">
         <p>
-          a {years_old} yo <TooltipText className="glitch" text="puppy" tooltip="fem" />thing.
+          a {years_old} yo <TooltipText
+            className="glitch"
+            text="puppy"
+            tooltip="fem"
+          />thing.
         </p>
         <p>
           trans girly w the best <span class="gf">gf</span>. very needy for lots
