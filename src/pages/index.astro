@@ -9,11 +9,6 @@ import { getImage } from "astro:assets";
 import starry from "../../public/starry.jpg";
 import TooltipText from "../components/TooltipText.astro";
 const starrybg = await getImage({ src: starry });
-
-const MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.2425;
-const years_old: number = Math.floor(
-  (Date.now() - new Date("2005-03-17").getTime()) / MS_PER_YEAR
-);
 ---
 
 <!DOCTYPE html>
@@ -61,38 +56,43 @@ const years_old: number = Math.floor(
 
     <!-- content -->
     <main>
-      <div class="upperbar"></div>
+      <div class="upperbar">
+        <div class="text"><div class="inner">૮ ᴖﻌᴖა</div></div>
+        <div class="max"></div>
+        <div class="pad"></div>
+        <div class="min"></div>
+        <div class="pad"></div>
+        <div class="x"></div>
+      </div>
       <div class="title">
         <h1>lumi }</h1>
         <a href="/blog">“</a>
       </div>
       <div class="text">
         <p>
-          a {years_old} yo <TooltipText
+          a <TooltipText
             className="glitch"
-            text="puppy"
-            tooltip="fem"
-          />thing.
+            text="?? yo"
+            tooltip="regressor"
+          /><TooltipText className="glitch" text="puppy" tooltip="fem" />thing.
         </p>
         <p>
-          trans girly w the best <span class="gf">gf</span>. very needy for lots
-          of physical affection. especially the kind one'd give to a <span
-            class="glitch">puppy</span
-          >.
+          very needy for lots of physical affection. especially the kind one'd
+          give to a <span class="glitch">puppy</span>.
         </p>
         <p>
           talks in 3rd person when comfy, sometimes. a bit childish n immature,
-          do treat it as such. no <span class="strikethrough">mature</span> stuff
-          like <span class="strikethrough">woman</span>, <span
-            class="strikethrough">miss</span
-          >, <span class="strikethrough">maam</span>, <span
-            class="strikethrough">beautiful</span
-          >, <span class="strikethrough">hot</span>, etc. girl, cute, dummy,
+          do treat it as such. no mature stuff like <span class="strikethrough"
+            >woman</span
+          >, <span class="strikethrough">miss</span>, <span
+            class="strikethrough">maam</span
+          >, <span class="strikethrough">beautiful</span>, <span
+            class="strikethrough">hot</span
+          >, etc.. girl, cute, dummy,
           <span class="glitch">puppy</span> are what makes its tail wag.
         </p>
         <p>
-          sometimes programs. not as often anymore. stopped being enjoyable
-          almost always. uses:
+          sometimes programs. not rly often anymore, using:
           <ul>
             <li>
               c++: writing <a href="https://github.com/lumikalt/ranges"
