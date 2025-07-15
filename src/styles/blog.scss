@@ -19,6 +19,8 @@ body {
   max-width: 120ch;
   text-align: justify;
   hyphens: auto;
+
+  margin: auto;
 }
 
 time {
@@ -48,7 +50,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5em;
+  font-size: 2em;
   color: $Accent;
   margin: 0;
   padding: 0;
