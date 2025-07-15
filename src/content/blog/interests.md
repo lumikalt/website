@@ -1,7 +1,7 @@
 ---
 title: "interests"
 description: "woof."
-pubDate: "Feb 08 2025"
+date: "2025.02.08"
 ---
 
 ## programming
@@ -35,14 +35,14 @@ other than that umm, lumi absolutely loves reading!, especially sci-fi and fanta
 
 ### web novels
 
-- [no, i said it's mental immunity]() - pastel is adorable and funny, big rolemodel ;3
-- [seoul object story]() - pretty well written worldbuilding based on SCP, with adorable characters.
-- [rose of the abyss]() - a cool little plant in love with a strong supportive woman... waow.
+- [no, i said it's mental immunity][mentalimmunity] - pastel is adorable and funny, big rolemodel ;3
+- [seoul object story][seoulobjectstory] - pretty well written worldbuilding based on SCP, with adorable characters.
+- [rose of the abyss][roseoftheabyss] - a cool little plant in love with a strong supportive woman... waow.
 
 ### manga
 
-- [Gon]() - the last dino on earth :O... cool art and cute mute dino.
-- [Witch Hat Atelier]() - the best!! manga there is. absolutely. incredibly well made magic setting and system.
+- [gon][gon] - the last dino on earth :O... cool art and cute mute dino.
+- [witch hat atelier][witchhatatelier] - the best!! manga there is. absolutely. incredibly well made magic setting and system.
 
 ## media
 
@@ -77,3 +77,5 @@ of the [littlebigplanet][lbp] games!!! especially karting, defo its favorite.
 [locoroco]: https://en.wikipedia.org/wiki/LocoRoco
 [xcom]: https://en.wikipedia.org/wiki/XCOM:_Enemy_Unknown
 [baba]: https://en.wikipedia.org/wiki/Baba_Is_You
+[gon]: https://en.wikipedia.org/wiki/Gon_(manga)
+[witchhatatelier]: https://en.wikipedia.org/wiki/Witch_Hat_Atelier

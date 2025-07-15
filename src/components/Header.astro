@@ -15,8 +15,8 @@ const up: string = pathname.replace(/(.*)\/.*/, "$1");
     {SITE_TITLE}
   </h2>
   <nav>
-    <HeaderLink href="/">Home</HeaderLink>
-    <HeaderLink href="/blog">Blog</HeaderLink>
+    <HeaderLink href="/">home</HeaderLink>
+    <HeaderLink href="/blog">blog</HeaderLink>
     {up === "" || up === "/blog" ? null : <HeaderLink href={up}>Up</HeaderLink>}
   </nav>
 </header>
