@@ -8,6 +8,13 @@ date: "2025.02.08"
 
 computer architectures is fun. it likes that. hopefully a future job related to that?? who knows, doubt tho. that job market is way competitive...
 
+likes to program in c++ or rust, but has used many programming languages.
+
+- c++: writing  [meta stuff](https://github.com/lumikalt/ranges) is adorable.
+- rust: bestest lang. proudest code is an [emulator](https://github.com/lumikalt/scratchy) for risc-v asm.
+
+quite interested in langdev sometimes, especially stack languages like Uiua, which is based on the best APL.
+
 ## food
 
 it loves food, a lot. tho small stomach and thin, so can't rly eat much. in the future will try to become more of a cooker so it can make all the swwets it wants!!!
