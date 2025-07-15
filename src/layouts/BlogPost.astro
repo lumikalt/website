@@ -6,13 +6,12 @@ import Footer from "../components/Footer.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, lastUpdated: updatedDate } = Astro.props;
+const { title, description, date } = Astro.props;
 ---
 
 <html lang="en">
   <head>
     <BaseHead title={title} description={description} />
-
   </head>
 
   <body>
@@ -22,21 +21,13 @@ const { title, description, pubDate, lastUpdated: updatedDate } = Astro.props;
         <h1 class="title">{title}</h1>
         <time>
           {
-            pubDate.toLocaleDateString("en-uk", {
+            date.toLocaleDateString("en-uk", {
               year: "numeric",
               month: "long",
               day: "numeric"
             })
           }
         </time>
-
-        {
-          updatedDate && (
-            <div>
-              Last updated on <time>{updatedDate}</time>
-            </div>
-          )
-        }
         <hr />
         <slot />
       </article>

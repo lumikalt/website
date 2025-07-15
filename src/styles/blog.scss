@@ -10,23 +10,32 @@ body {
 }
 
 body {
-  font-family: Wonderly;
-  letter-spacing: 1px;
+  font-family: Wonderly, cursive;
 
   color: $Foreground;
   background-color: $BackgroundDarker;
 
-  margin: auto;
   padding: 20px;
   max-width: 120ch;
   text-align: justify;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+time {
+  font-size: 0.8em;
+  color: $Foreground !important;
+  text-align: left;
+
+  &,
+  & + * {
+    display: flex;
+    align-items: center;
+  }
 }
 
 h1 {
   font-size: 4em;
-  color: $Accent;
+  color: $Foreground;
   margin: 0;
   padding: 0;
 }
@@ -40,7 +49,7 @@ h2 {
 
 h3 {
   font-size: 2.5em;
-  color: $ForegroundSecondary;
+  color: $Accent;
   margin: 0;
   padding: 0;
 }
@@ -51,9 +60,8 @@ li {
   margin-top: 10px;
   margin-bottom: 10px;
   color: white;
-  font-family: Wonderly;
+  font-family: Wonderly, cursive;
   font-size: 30px;
-  letter-spacing: 1.5px;
 }
 
 .about {
@@ -71,11 +79,8 @@ li {
     &:hover {
       transform: scale(1.5) translateY(-5px);
       // make background a little darker, stronger closer to the text
-      text-shadow:
-        0 0 100px rgba(0, 0, 0, 1),
-        0 0 80px rgba(0, 0, 0, 1),
-        0 0 60px rgba(0, 0, 0, 1),
-        0 0 40px rgba(0, 0, 0, 1),
+      text-shadow: 0 0 100px rgba(0, 0, 0, 1), 0 0 80px rgba(0, 0, 0, 1),
+        0 0 60px rgba(0, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 1),
         0 0 20px rgba(0, 0, 0, 1);
     }
   }
@@ -83,11 +88,7 @@ li {
 
 a {
   text-decoration-style: dotted;
-  color: $AccentSecondary;
-
-  &:visited {
-    color: $Accent;
-  }
+  color: $Foreground;
 }
 
 nav a {
@@ -122,10 +123,10 @@ code {
 }
 
 pre {
-  padding: .5rem;
+  padding: 0.5rem;
   max-width: 80ch;
 
-  >code {
+  > code {
     font-size: 18px;
   }
 }
