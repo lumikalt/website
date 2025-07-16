@@ -202,6 +202,7 @@ a {
     &:hover {
       color: rgba(200, 0, 0, 1);
       background: rgba(255, 189, 182, 0.3);
+      border-radius: 20%;
     }
 
     &:hover::after {
