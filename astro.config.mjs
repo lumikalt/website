@@ -3,6 +3,7 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
+import rehypeSpanKorean from "./src/utils/rehype-span-korean";
 
 import sitemap from "@astrojs/sitemap";
 
@@ -14,7 +15,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   markdown: {
     remarkPlugins: [remarkMath],
-    rehypePlugins: [rehypeKatex]
+    rehypePlugins: [rehypeKatex, rehypeSpanKorean]
   },
 
   adapters: [
