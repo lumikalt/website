@@ -23,5 +23,8 @@
     "rollup": "latest",
     "sass": "latest",
     "sharp": "latest"
+  },
+  "devDependencies": {
+    "unist-util-visit": "latest"
   }
 }
