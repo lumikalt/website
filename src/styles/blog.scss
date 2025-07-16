@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  font-family: Wonderly, cursive;
+  font-family: Wonderly;
 
   color: $Foreground;
   background-color: $BackgroundDarker;
@@ -21,6 +21,11 @@ body {
   hyphens: auto;
 
   margin: auto;
+}
+
+:lang(ko) {
+  font-family: "Gaegu", sans-serif;
+  font-size: 3rem;
 }
 
 time {
@@ -62,7 +67,6 @@ li {
   margin-top: 10px;
   margin-bottom: 10px;
   color: white;
-  font-family: Wonderly, cursive;
   font-size: 30px;
 }
 
