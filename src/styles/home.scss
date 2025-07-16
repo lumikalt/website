@@ -68,14 +68,10 @@ main {
   backdrop-filter: blur(20px);
 }
 
-a {
-  color: $AccentSecondary;
-  text-decoration: none;
+a, a:visited {
   transition: color 0.25s ease-in;
-
-  &:visited {
-    color: $AccentSecondary;
-  }
+  text-decoration-style: dotted;
+  color: $Foreground;
 
   &:hover {
     color: $Accent;
