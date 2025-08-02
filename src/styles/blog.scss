@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  font-family: Wonderly;
+  font-family: Wonderly, cursive;
 
   color: $Foreground;
   background-color: $BackgroundDarker;
@@ -25,7 +25,8 @@ body {
 
 :lang(ko) {
   font-family: "Gaegu", sans-serif;
-  font-size: 3rem;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 time {
