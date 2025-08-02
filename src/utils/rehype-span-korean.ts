@@ -4,35 +4,40 @@ import type { Root, Element, Text, Node } from 'hast';
 const isElement = (node: Node): node is Element =>
   typeof (node as Element).tagName === 'string' && Array.isArray((node as Element).children);
 
-const hasKoreanClass = (el: Element): boolean => {
-  const className = el.properties?.className;
-  if (typeof className === 'string') return className.includes('korean');
-  if (Array.isArray(className)) return className.includes('korean');
-  return false;
-};
-
 export default function rehypeSpanKorean() {
   return (tree: Root) => {
     visit(tree, 'text', (node: Text, index: number | undefined, parent: Node | undefined) => {
       if (
         isElement(parent as Node) &&
         typeof index === 'number' &&
-        (parent as Element).tagName !== 'span' &&
-        !hasKoreanClass(parent as Element)
+        (parent as Element).tagName !== 'span'
       ) {
-        const regex = /([\uAC00-\uD7AF\u3130-\u318F\s]+)/g;
+        const regex = /([\uAC00-\uD7AF\u3130-\u318F\s.,!?'"“”‘’\-—…·:;(){}\[\]<>~`@#$%^&*_+=|\\/]+)/g;
         if (regex.test(node.value)) {
           const segments = node.value.split(regex).filter(Boolean);
-          const newNodes = segments.map(segment =>
-            /[\uAC00-\uD7AF\u3130-\u318F]/.test(segment)
-              ? {
-                type: 'element' as const,
-                tagName: 'span',
-                properties: { lang: 'ko' }, // <-- set lang instead of class
-                children: [{ type: 'text' as const, value: segment }]
+          const newNodes = segments.flatMap(segment => {
+            // Check if segment is Korean (with punctuation)
+            if (/[\uAC00-\uD7AF\u3130-\u318F.,!?'"“”‘’\-—…·:;(){}\[\]<>~`@#$%^&*_+=|\\/]/.test(segment)) {
+              // Extract leading and trailing spaces
+              const leadingSpaces = segment.match(/^\s+/)?.[0] ?? '';
+              const trailingSpaces = segment.match(/\s+$/)?.[0] ?? '';
+              const core = segment.trim();
+              const nodes = [];
+              if (leadingSpaces) nodes.push({ type: 'text' as const, value: leadingSpaces });
+              if (core) {
+                nodes.push({
+                  type: 'element' as const,
+                  tagName: 'span',
+                  properties: { lang: 'ko' },
+                  children: [{ type: 'text' as const, value: core }]
+                });
               }
-              : { type: 'text' as const, value: segment }
-          );
+              if (trailingSpaces) nodes.push({ type: 'text' as const, value: trailingSpaces });
+              return nodes;
+            } else {
+              return { type: 'text' as const, value: segment };
+            }
+          });
           (parent as Element).children.splice(index, 1, ...newNodes);
         }
       }
