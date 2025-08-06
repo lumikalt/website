@@ -1,5 +1,5 @@
 # Website + Blog
 
-I'm gonna post some stuff I find interesting here. Will also serve as my homepage.
+gonna post some stuff here, and a homepage.
 
 2022 @ Lumi Kalt
