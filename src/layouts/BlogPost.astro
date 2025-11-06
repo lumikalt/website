@@ -1,4 +1,6 @@
 ---
+import "../styles/blog.scss";
+
 import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
@@ -11,7 +13,7 @@ const { title, description, date } = Astro.props;
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} author={"lumi"} />
   </head>
 
   <body>
@@ -28,8 +30,11 @@ const { title, description, date } = Astro.props;
             })
           }
         </time>
+
         <hr />
-        <slot />
+        <div class="content">
+          <slot />
+        </div>
       </article>
     </main>
     <Footer />

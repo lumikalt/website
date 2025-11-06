@@ -1,6 +1,7 @@
 ---
 const title = "lumi";
 const description = "*woof*";
+const author = "lumi";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 import { Image } from "astro:assets";
@@ -28,7 +29,7 @@ const years_old: number = Math.floor(
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="author" content="Lumi Kalt" />
+    <meta name="author" content={author} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />

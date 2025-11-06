@@ -1,4 +1,6 @@
 ---
+import "../../styles/blog.scss";
+
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
@@ -12,7 +14,7 @@ const posts = (await getCollection("blog")).sort(
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={"lumi blog"} description={":3"} />
+    <BaseHead title={"lumi blog"} description={":3"} author={"lumi"} />
     <style>
       ul {
         list-style-type: none;

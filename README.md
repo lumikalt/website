@@ -2,4 +2,4 @@
 
 gonna post some stuff here, and a homepage.
 
-2022 @ Lumi Kalt
+2022 @ lumi
