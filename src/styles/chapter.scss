@@ -1,0 +1,147 @@
+@use "./variables" as *;
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Wonderly, cursive;
+
+  color: $Foreground;
+  background-color: $BackgroundDarker;
+
+  padding: 20px;
+  max-width: 120ch;
+  text-align: justify;
+  hyphens: auto;
+  margin: auto;
+}
+
+nav a,
+nav span {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+nav .disabled {
+  color: $Background;
+}
+
+// Chapter index styling
+.chapter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateX(10px);
+  }
+
+  a {
+    flex-grow: 1;
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    &:hover {
+      color: $Accent;
+    }
+  }
+}
+
+.chapter-num {
+  // Monospace-like formatting
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+  font-feature-settings: "tnum";
+
+  // Layout
+  min-width: 3rem;
+  text-align: right;
+  margin-right: 1.5rem;
+  font-size: 1.8rem;
+
+  // Add a period after the number
+  &::after {
+    content: ".";
+  }
+}
+
+:lang(ko) {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+time {
+  font-size: 0.8em;
+  color: $Foreground !important;
+  text-align: left;
+
+  &,
+  & + * {
+    display: flex;
+    align-items: center;
+  }
+}
+
+h1 {
+  font-size: 4em;
+  color: $Foreground;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 3em;
+  color: $ForegroundSecondary;
+  margin: 2rem 0 0 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 2em;
+  color: $Accent;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 30px;
+}
+
+a {
+  text-decoration-style: dotted;
+  color: $Foreground;
+}
+
+content {
+  line-height: 1.6;
+}
+
+table {
+  width: 100%;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+blockquote {
+  border: 1px dotted $Border;
+  color: $Accent;
+  padding: 2px 20px 2px 20px;
+  margin: 0px;
+  font-style: italic;
+  border-radius: 20px;
+}
