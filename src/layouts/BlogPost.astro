@@ -8,12 +8,12 @@ import Footer from "../components/Footer.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, date } = Astro.props;
+const { title, description, date, latex = false } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} author={"lumi"} />
+    <BaseHead title={title} description={description} author={"lumi"} needsLatex={latex} />
   </head>
 
   <body>

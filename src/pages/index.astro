@@ -5,9 +5,10 @@ const title = "lumi";
 const description = "*woof*";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
+import TooltipText from "../components/TooltipText.astro";
+
 import { getImage } from "astro:assets";
 import starry from "../../public/starry.jpg";
-import TooltipText from "../components/TooltipText.astro";
 const starrybg = await getImage({ src: starry });
 ---
 
