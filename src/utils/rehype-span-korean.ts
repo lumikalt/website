@@ -12,12 +12,12 @@ export default function rehypeSpanKorean() {
         typeof index === 'number' &&
         (parent as Element).tagName !== 'span'
       ) {
-        const regex = /([\uAC00-\uD7AF\u3130-\u318F\s.,!?'"“”‘’\-—…·:;(){}\[\]<>~`@#$%^&*_+=|\\/]+)/g;
+        const regex = /([\uAC00-\uD7AF\u3130-\u318F\s.…]+)/g;
         if (regex.test(node.value)) {
           const segments = node.value.split(regex).filter(Boolean);
           const newNodes = segments.flatMap(segment => {
             // Check if segment is Korean (with punctuation)
-            if (/[\uAC00-\uD7AF\u3130-\u318F.,!?'"“”‘’\-—…·:;(){}\[\]<>~`@#$%^&*_+=|\\/]/.test(segment)) {
+            if (/[\uAC00-\uD7AF\u3130-\u318F.]/.test(segment)) {
               // Extract leading and trailing spaces
               const leadingSpaces = segment.match(/^\s+/)?.[0] ?? '';
               const trailingSpaces = segment.match(/\s+$/)?.[0] ?? '';
