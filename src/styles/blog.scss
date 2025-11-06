@@ -39,6 +39,11 @@ time {
     display: flex;
     align-items: center;
   }
+
+  :not(.content) & {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
 }
 
 h1 {
