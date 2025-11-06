@@ -8,10 +8,10 @@ this lumi is quite a broken little thing.
 
 # physically
 
-lumi has a unique recessive/mythocondrial genetic illness, which no predecessor presents, that causes several problems with nerves and tendons. this includes:
+lumi has a unique recessive/mitochondrial genetic illness, which no predecessor presents, that causes several problems with nerves and tendons. this includes:
 
 - cataracts (requiring glasses).
-- deafness of the right ear (coclear implant surgery scheduled).
+- deafness of the right ear (cochlear implant surgery scheduled).
 - cavus feet (2 surgeries done to lessen).
 - some problems with the hands.
 - weak throat (easily chokes).
@@ -32,7 +32,7 @@ doctors are malicious either due to their own stupidity or transphobia. do ***no
 
 ## adhd
 
-drinking those yucky energy drinks (never tried coffe cuz it sucks even more) makes lumi very sleepy, and some other symptoms of adhd are present like being unable to foccus on important stuff but hyperfoccusing sometimes.
+drinking those yucky energy drinks (never tried coffee cuz it sucks even more) makes lumi very sleepy, and some other symptoms of adhd are present like being unable to foccus on important stuff but hyperfocusing sometimes.
 
 Haven't checked with a doctor, tho.
 
