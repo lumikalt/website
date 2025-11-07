@@ -17,9 +17,6 @@ const { interval = 500, length = 5 } = Astro.props;
 
 <script>
   const CHARS = "█▓▒░";
-  // const CHARS =
-  //   "0123456789█!<>-_\\/[]{}—=+*^?#▰⁉⁼ℵⅵ➡ℨⰋ⌷∬⮡⩼ⓚ⧪❾⨶⏎⪒⛴⥹╞⊤✴ⱶ⭬▭⼆▞⽄⤐➣Ⲓ⸰⍾⎨⪃⑑⺪⠁" +
-  //   "⼏⧝ℸ⸧ↈⅇ⓳⠪⫧✜⢖ℾⱷ⽠₤‒⅟➸⋝⓿Ⓝ⅞␔⻯━ⶬ⣾♟≷⫉■ⓓ⯯Ⲥ⼃⓷⎳ⱺ▓▀▛▁▘▊▔▋▕▉▚▒▗▂▖▍▝▟▞▇▅▜▆░▙▄▐█▃";
   const rand = () => CHARS[Math.floor(Math.random() * CHARS.length)];
 
   function garble(n: number) {
@@ -34,7 +31,6 @@ const { interval = 500, length = 5 } = Astro.props;
       window.matchMedia &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    // initial content
     const initial = garble(n);
     el.textContent = initial;
     el.setAttribute("data-text", initial);
@@ -84,7 +80,7 @@ const { interval = 500, length = 5 } = Astro.props;
 
     animation: jitter 900ms infinite linear;
   }
-  /* stable glow rendered in a pseudo-element so text-shadow isn't animated */
+
   .garbled::before {
     all: inherit;
     content: attr(data-text);
@@ -97,7 +93,6 @@ const { interval = 500, length = 5 } = Astro.props;
     transform-origin: center;
   }
 
-  /* animate transform only; the glow stays static */
   @keyframes jitter {
     0% {
       transform: translateX(0);
