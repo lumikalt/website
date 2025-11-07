@@ -8,7 +8,7 @@ import Garbled from "../components/Garbled.astro";
 <html lang="en">
   <head>
     <BaseHead
-      title="On Interacting With: lumi"
+      title="On Interacting With lumi"
       description="A guide."
       author="lumi"
     />
@@ -16,20 +16,32 @@ import Garbled from "../components/Garbled.astro";
 
   <body>
     <main>
-      <h1>lumi</h1>
+      <h1>Subject #<Garbled /></h1>
+
+      <h2>General Info</h2>
+
       <div class="row">
-        <div>Name</div>
-        <div>lumi</div>
+        <span>Name</span>
+        <span>lumi</span>
       </div>
 
       <div class="row">
-        <div>Age</div>
-        <Garbled />
+        <span>Age</span>
+        <span><Garbled length={3} /> yo</span>
       </div>
 
-      <div class="row">
-        <div>Pronouns</div>
-        <div>it/its</div>
+      <div class="row nosplit">
+        <span>Pronouns</span>
+        <span>it/its; Avoid, fallback: she/her</span>
+      </div>
+
+      <div class="row nosplit">
+        <span>Comments</span>
+        <span>
+          Despite appearing humanoid, lumi is not human, but rather a Canis
+          lupus (gray wolf). Additionally, lumi will act like a young child when
+          feeling safe.
+        </span>
       </div>
     </main>
   </body>

@@ -4,9 +4,9 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
-
+  min-height: 100vh; /* let body expand but ensure at least viewport height */
+  box-sizing: border-box;
+  /* avoid forced viewport-width which can introduce horizontal scrollbars */
   background-color: black;
 }
 
@@ -14,8 +14,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: fit-content;
-  margin: 2rem;
+  /* keep main narrow but responsive: at most 120ch, otherwise use available width */
+  width: min(100%, 120ch);
+  margin: 2rem auto;
 
   color: white;
   font-family: DepartureMono, cursive;
@@ -26,12 +27,26 @@ main > * {
   text-shadow: 2px 0 0 rgba(30, 150, 255, 1), -2px 0 0 rgba(255, 50, 80, 1);
   animation: chroma 900ms infinite linear;
   filter: blur(0.2px) contrast(1.02);
-  width: fit-content;
+
+  /* prevent children from growing wider than the container */
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+
+  margin-inline: 1rem !important;
 }
 
 h1 {
   margin: 0;
   padding: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  color: $Foreground;
 }
 
 .row {
@@ -40,7 +55,6 @@ h1 {
   gap: 1rem;
 
   > :first-child {
-    // flex: 0 0 7rem; /* adjust width as needed */
     text-align: left;
     font-weight: bold;
     color: $ForegroundSecondary;
@@ -52,7 +66,41 @@ h1 {
   }
 
   > :not(:first-child) {
-    flex: 0 0 auto;
+    /* allow second column to grow/shrink and wrap without forcing overflow */
+    flex: 1 1 auto;
+    min-width: 0; /* allow flex item to shrink below its content's min width */
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+.row.nosplit {
+  /* Render the title + text as inline content so wrapping behaves like a single line */
+  display: inline;
+}
+
+.row.nosplit > .row_title {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.row.nosplit > .row_text {
+  display: inline;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (max-width: 420px) {
+  /* keep behavior consistent on small screens */
+  .row.nosplit {
+    display: block;
+  }
+  .row.nosplit > .row_title {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .row.nosplit > .row_text {
+    display: block;
   }
 }
 
