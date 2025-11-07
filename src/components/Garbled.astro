@@ -1,0 +1,128 @@
+---
+export interface Props {
+  interval?: number;
+  length?: number;
+}
+
+const { interval = 500, length = 5 } = Astro.props;
+---
+
+<span
+  class="garbled"
+  data-length={String(length)}
+  data-interval={String(interval)}
+  aria-hidden="true"
+  data-text="">
+</span>
+
+<script>
+  const CHARS = "█▓▒░";
+  // const CHARS =
+  //   "0123456789█!<>-_\\/[]{}—=+*^?#▰⁉⁼ℵⅵ➡ℨⰋ⌷∬⮡⩼ⓚ⧪❾⨶⏎⪒⛴⥹╞⊤✴ⱶ⭬▭⼆▞⽄⤐➣Ⲓ⸰⍾⎨⪃⑑⺪⠁" +
+  //   "⼏⧝ℸ⸧ↈⅇ⓳⠪⫧✜⢖ℾⱷ⽠₤‒⅟➸⋝⓿Ⓝ⅞␔⻯━ⶬ⣾♟≷⫉■ⓓ⯯Ⲥ⼃⓷⎳ⱺ▓▀▛▁▘▊▔▋▕▉▚▒▗▂▖▍▝▟▞▇▅▜▆░▙▄▐█▃";
+  const rand = () => CHARS[Math.floor(Math.random() * CHARS.length)];
+
+  function garble(n: number) {
+    let out = "";
+    for (let i = 0; i < n; i++) out += rand();
+    return out;
+  }
+
+  function init(el: HTMLElement) {
+    const n = Math.max(1, Number(el.dataset.length));
+    const prefersReduced =
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // initial content
+    const initial = garble(n);
+    el.textContent = initial;
+    el.setAttribute("data-text", initial);
+
+    // For reduced-motion, set text to ▒ x length and stop
+    if (prefersReduced) {
+      const reduced = "▒".repeat(n);
+      el.textContent = reduced;
+      el.setAttribute("data-text", reduced);
+      return;
+    }
+
+    let running = true;
+
+    function frame() {
+      const s = garble(n);
+      el.textContent = s;
+      el.setAttribute("data-text", s);
+      if (running)
+        requestAnimationFrame(() =>
+          setTimeout(
+            frame,
+            Math.max(50, Math.random() * Number(el.dataset.interval))
+          )
+        );
+    }
+
+    frame();
+  }
+
+  document.querySelectorAll<HTMLElement>(".garbled").forEach(init);
+</script>
+
+<style lang="scss">
+  .garbled {
+    all: inherit;
+    position: relative;
+    display: inline-block;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    will-change: contents;
+    user-select: none;
+    outline: none;
+    backface-visibility: hidden;
+
+    animation: jitter 900ms infinite linear;
+  }
+  /* stable glow rendered in a pseudo-element so text-shadow isn't animated */
+  .garbled::before {
+    all: inherit;
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 6px 18px rgba(30, 150, 255, 0.34),
+      0 3px 8px rgba(255, 50, 80, 0.22);
+    transform-origin: center;
+  }
+
+  /* animate transform only; the glow stays static */
+  @keyframes jitter {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(0.3px);
+    }
+    50% {
+      transform: translateX(-0.4px);
+    }
+    75% {
+      transform: translateX(0.5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .garbled {
+      animation: none;
+      filter: none;
+    }
+    .garbled::before {
+      display: none;
+    }
+  }
+</style>
