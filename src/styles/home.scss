@@ -144,6 +144,10 @@ a, a:visited {
     margin-block: 0;
     color: #fbe2ba;
     text-shadow: 0 0 5px black;
+
+    &::after {
+      content: " }";
+    }
   }
 }
 
