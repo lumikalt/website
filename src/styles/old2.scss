@@ -1,0 +1,270 @@
+@use "./variables" as *;
+
+body {
+  margin: 0;
+  padding: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.bgcontainer {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: inherit;
+  z-index: -100;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  width: 5 * 1920px;
+  height: 5 * 1920px;
+  z-index: -100;
+  overflow: hidden;
+
+  .image {
+    width: 100%;
+    height: 100%;
+    background-size: 0.5 * 1920px 0.5 * 1920px;
+    animation: movebg 50s linear infinite;
+  }
+}
+
+@keyframes movebg {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-1920px, -1920px, 0);
+  }
+}
+
+/* content */
+
+main {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-flow: column wrap;
+  max-width: 120ch;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  border: 10px solid $Border;
+  border-top: 50px solid $Border;
+  border-radius: 20px;
+
+  backdrop-filter: blur(20px);
+}
+
+a, a:visited {
+  transition: color 0.25s ease-in;
+  text-decoration-style: dotted;
+  color: $Foreground;
+
+  &:hover {
+    color: $Accent;
+  }
+}
+
+.upperbar {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  * {
+    height: 30px;
+    border-radius: 30px;
+  }
+
+  .text {
+    position: relative;
+    flex: 17;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+
+    .inner {
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 100%;
+      height: 30px;
+    }
+  }
+
+  .min,
+  .max {
+    width: 10px;
+    flex: 1;
+    background-color: $AccentSecondary;
+  }
+
+  .x {
+    flex: 1;
+    background-color: $Accent;
+  }
+
+  .pad {
+    flex: .2;
+  }
+}
+
+.title {
+  inset: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: Cookies;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  overflow: clip;
+  width: 100%;
+
+  h1 {
+    padding-left: 1rem;
+    margin-block: 0;
+    color: #fbe2ba;
+    text-shadow: 0 0 5px black;
+
+    &::after {
+      content: " }";
+    }
+  }
+}
+
+.text {
+  color: white;
+  font-family: Wonderly;
+  font-size: 2.2rem;
+  text-align: justify;
+  hyphens: auto;
+
+  ul,
+  & > p:has(+ ul) {
+    margin-block: 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li::marker {
+    content: "~ ";
+    font-family: Cookies;
+    font-size: 1.5rem;
+  }
+
+  .glitch {
+    will-change: transform;
+    text-shadow: 0.05em 0 0 $Accent, -0.03em -0.04em 0 $AccentSecondary,
+      0.025em 0.04em 0 $Border;
+    animation: glitch 800ms infinite;
+  }
+
+  .strikethrough {
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease-in;
+
+    &::after {
+      content: "";
+      will-change: transform;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 5px;
+      margin-top: -0.6em;
+      background: black;
+      transform-origin: center left;
+      animation: strikethrough 1s 0.5s cubic-bezier(0.55, 0, 0.1, 1) 1;
+      transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    }
+
+    &:hover {
+      color: rgba(200, 0, 0, 1);
+      background: rgba(255, 189, 182, 0.3);
+      border-radius: 20%;
+    }
+
+    &:hover::after {
+      transform: scaleX(0);
+      transform-origin: center right;
+    }
+  }
+}
+
+@keyframes strikethrough {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 $Accent, -0.03em -0.04em 0 $AccentSecondary,
+      0.025em 0.04em 0 $Border;
+  }
+
+  15% {
+    text-shadow: 0.05em 0 0 $Accent, -0.03em -0.04em 0 $AccentSecondary,
+      0.025em 0.04em 0 $Border;
+  }
+
+  16% {
+    text-shadow: -0.05em -0.025em 0 $Accent, 0.025em 0.035em 0 $AccentSecondary,
+      -0.05em -0.05em 0 $Border;
+  }
+
+  49% {
+    text-shadow: -0.05em -0.025em 0 $Accent, 0.025em 0.035em 0 $AccentSecondary,
+      -0.05em -0.05em 0 $Border;
+  }
+
+  50% {
+    text-shadow: 0.05em 0.035em 0 $Accent, 0.03em 0 0 $AccentSecondary,
+      0 -0.04em 0 $Border;
+  }
+
+  99% {
+    text-shadow: 0.05em 0.035em 0 $Accent, 0.03em 0 0 $AccentSecondary,
+      0 -0.04em 0 $Border;
+  }
+
+  100% {
+    text-shadow: -0.05em 0 0 $Accent, -0.025em -0.04em 0 $Accent,
+      -0.04em -0.025em 0 $Border;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch {
+    animation: none;
+  }
+
+  .strikethrough {
+    animation: none;
+    text-decoration: line-through;
+  }
+}

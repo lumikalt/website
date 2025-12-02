@@ -1,0 +1,98 @@
+---
+import "../styles/old2.scss";
+
+const title = "lumi";
+const description = "*woof*";
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+import TooltipText from "../components/TooltipText.astro";
+
+import { getImage } from "astro:assets";
+import starry from "../../public/starry.jpg";
+const starrybg = await getImage({ src: starry });
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="author" content="lumi" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <style is:global>
+      @font-face {
+        font-family: Cookies;
+        font-display: swap;
+        src: url("/font/Cookies.otf") format("opentype");
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- background -->
+    <div class="bgcontainer">
+      <div class="bg">
+        <div class="image" style={`background-image: url(${starrybg.src})`}>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <main>
+      <div class="upperbar">
+        <div class="text"><div class="inner">૮ ᴖﻌᴖა</div></div>
+        <div class="max"></div>
+        <div class="pad"></div>
+        <div class="min"></div>
+        <div class="pad"></div>
+        <div class="x"></div>
+      </div>
+      <div class="title">
+        <h1>lumi</h1>
+        <a href="/blog">#</a>
+      </div>
+      <div class="text">
+        <p>
+          a <TooltipText
+            className="glitch"
+            text="?? yo"
+            tooltip="regressor"
+          /><TooltipText className="glitch" text="puppy" tooltip="fem" />thing.
+        </p>
+        <p>
+          very needy for lots of physical affection. especially the kind one'd
+          give to a <span class="glitch">puppy</span>.
+        </p>
+        <p>
+          talks in 3rd person when comfy, sometimes. a bit childish n immature,
+          do treat it as such. no mature stuff like <span class="strikethrough"
+            >woman</span
+          >, <span class="strikethrough">miss</span>, <span
+            class="strikethrough">maam</span
+          >, <span class="strikethrough">beautiful</span>, <span
+            class="strikethrough">hot</span
+          >, etc.. girl, cute, dummy,
+          <span class="glitch">puppy</span> are what makes its tail wag.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
