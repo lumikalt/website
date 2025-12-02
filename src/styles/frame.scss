@@ -12,7 +12,7 @@ body {
   background-color: $bg;
   color: $fg;
   font-size: 20px;
-  font-family: "CozetteVector", "PixelMplus10", monospace;
+  font-family: "CozetteVector", monospace;
 }
 
 body::before,
@@ -27,16 +27,16 @@ body::after {
 
 body::before {
   background: url("/glitchy-l.gif") repeat-y center left;
-  background-size: 64px;
+  background-size: 128px;
   left: 0;
-  filter: blur(10px);
+  filter: blur(30px);
 }
 
 body::after {
   background: url("/glitchy-r.gif") repeat-y center right;
-  background-size: 64px;
+  background-size: 128px;
   right: 0;
-  filter: blur(10px);
+  filter: blur(30px);
 }
 
 p,
@@ -69,15 +69,6 @@ a:hover {
 
 li {
   list-style-type: none;
-}
-
-.dashed li::before {
-  content: "- ";
-}
-
-.symbol {
-  font-family: "CozetteVector";
-  font-weight: 400 !important;
 }
 
 .hbar {
@@ -125,10 +116,6 @@ pre {
   text-align: center;
 }
 
-.spin {
-  animation: spin 2s linear infinite;
-}
-
 hr {
   border: solid 1px $fg;
   box-shadow: $accent1-shadow-light;
@@ -136,26 +123,11 @@ hr {
   margin-bottom: 32px;
 }
 
-/* keyframes */
-
-@keyframes spin {
-  0% {
-    transform: rotateY(0deg);
-  }
-  50% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(0deg);
-  }
-}
-
-/* queries obsolete */
+/* queries */
 
 @media (max-width: 482px) {
   .opt-hide {
     display: none;
-    width: 0;
   }
 }
 
