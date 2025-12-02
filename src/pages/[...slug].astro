@@ -1,0 +1,17 @@
+---
+import "../styles/home.scss";
+
+import MainPage from "../layouts/MainPage.astro";
+
+const { slug = "" } = Astro.params;
+
+export function getStaticPaths() {
+  return ["", "about", "links"].map(frame => {
+    return { params: { slug: frame } };
+  });
+}
+
+const slugPath = slug;
+---
+
+<MainPage frame={slugPath} />
