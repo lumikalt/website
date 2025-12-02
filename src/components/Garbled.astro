@@ -12,8 +12,7 @@ const { interval = 500, length = 5 } = Astro.props;
   data-length={String(length)}
   data-interval={String(interval)}
   aria-hidden="true"
-  data-text="">
-</span>
+  data-text=""></span>
 
 <script>
   const CHARS = "█▓▒░";
@@ -67,7 +66,10 @@ const { interval = 500, length = 5 } = Astro.props;
 <style lang="scss">
   .garbled {
     position: relative;
-    display: inline-block;
+    display: inline;
+
+    margin: 0;
+    padding: 0;
 
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -78,21 +80,17 @@ const { interval = 500, length = 5 } = Astro.props;
     backface-visibility: hidden;
 
     animation: inherit;
-
-    width: fit-content;
   }
 
   .garbled::before {
-    /* avoid inheriting layout-related properties like margin-inline */
     content: attr(data-text);
     position: absolute;
     left: 0;
     top: 0;
-    display: inline-block;
+    display: inline;
     pointer-events: none;
     margin: 0;
     padding: 0;
-    /* explicitly inherit only typography so alignment matches */
     font: inherit;
     line-height: inherit;
     letter-spacing: inherit;

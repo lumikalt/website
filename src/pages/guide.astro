@@ -18,31 +18,57 @@ import Garbled from "../components/Garbled.astro";
     <main>
       <h1>Subject #<Garbled /></h1>
 
-      <h2>General Info</h2>
+      <h2>Description</h2>
 
-      <div class="row">
+      <div class="row nosplit">
         <span>Name</span>
         <span>lumi</span>
       </div>
 
-      <div class="row">
+      <div class="row nosplit">
         <span>Age</span>
-        <span><Garbled length={3} /> yo</span>
+        <span><Garbled length={3} /></span>
       </div>
 
       <div class="row nosplit">
         <span>Pronouns</span>
-        <span>it/its; Avoid, fallback: she/her</span>
+        <span>it/its</span>
+      </div>
+
+      <div class="row nosplit">
+        <span>Gender</span>
+        <span>Feminine</span>
       </div>
 
       <div class="row nosplit">
         <span>Comments</span>
+        <br />
         <span>
-          Despite appearing humanoid, lumi is not human, but rather a Canis
-          lupus (gray wolf). Additionally, lumi will act like a young child when
-          feeling safe.
+          Despite its humanoid appearance, lumi is not human, but a Canis lupus
+          (gray wolf). <br />
+          Additionally, lumi will act like a young child when feeling safe (real
+          age hidden as a security measure).
         </span>
       </div>
+
+      <hr />
+
+      <h2>Security Measures</h2>
+
+      <div class="row nosplit">
+        <span>Location</span>
+        <span class="fix-ws">
+          <span>Site&nbsp;</span>
+          <Garbled length={7} />
+          <span class="nosplit">, Portugal bhfuisojhgnforiaygjdsakgs ukeabfniyseog bhnsaiugdhfjang isayhg nsiuj</span>
+        </span>
+      </div>
+
+      <span>
+        Keep all interactions with lumi within the designated safe zones. Do not
+        attempt to engage with it outside of these areas, as this may trigger
+        defensive behaviors.
+      </span>
     </main>
   </body>
 </html>
