@@ -48,24 +48,21 @@ h2 {
 }
 
 .row {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.35ch; /* ensure visible spacing between children */
-  flex-wrap: nowrap; /* keep the whole group as a single non-wrapping run */
-  white-space: nowrap; /* prevent internal line breaks */
+  gap: 1rem;
 
-  > span {
-    flex: none;
+  > :first-child {
+    text-align: left;
+    font-weight: bold;
+    color: $ForegroundSecondary;
+
+    &::after {
+      content: ":";
+      color: white;
+    }
   }
 
-  /* Fallback: ensure a small gap before an inline garbled component */
-  > .garbled {
-    margin-inline-start: 0.2ch;
-  }
-
-  .append-space::after {
-    content: " ";
-  }
   > :not(:first-child) {
     /* allow second column to grow/shrink and wrap without forcing overflow */
     flex: 1 1 auto;
@@ -77,7 +74,15 @@ h2 {
 }
 
 .fix-ws {
-  display: inline-flex;
+  display: inline-block;
+
+  .append-space::after {
+    content: " ";
+  }
+
+  > span {
+    white-space: pre-wrap;
+  }
 }
 
 @media (max-width: 420px) {
