@@ -1,0 +1,46 @@
+/* colors */
+$fg: #fbffff;
+$bg: #081010;
+$bgitem: #121818;
+$shade: #323636;
+$accent1: #90f1fe;
+$accent2: #92ffc3;
+
+/* shadows */
+$accent1-shadow-light: 0px 0px 4px #90f1fea0;
+$accent1-shadow-heavy: 0px 0px 12px #90f1fe;
+$accent2-shadow-light: 0px 0px 4px #92ffc380;
+$accent2-shadow-heavy: 0px 0px 12px #92ffc3;
+
+/* animations */
+$q-move: 160ms ease-in-out;
+$q-glow: 240ms ease-in-out;
+
+/* stuff */
+$border: 2px solid $fg;
+
+@media (prefers-reduced-motion: reduce) {
+  $q-glow: 0;
+  $q-move: 0;
+}
+
+@font-face {
+  font-family: CozetteVector;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/CozetteCrossedSevenVector.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: CozetteVector;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/font/CozetteCrossedSevenVector.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Zelda DX TT BRK";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/zelda-dx-tt-brk.woff2") format("woff2");
+}
