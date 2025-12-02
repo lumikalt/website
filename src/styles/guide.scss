@@ -4,9 +4,8 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* let body expand but ensure at least viewport height */
+  min-height: 100vh;
   box-sizing: border-box;
-  /* avoid forced viewport-width which can introduce horizontal scrollbars */
   background-color: black;
 }
 
@@ -14,12 +13,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* keep main narrow but responsive: at most 120ch, otherwise use available width */
   width: min(100%, 120ch);
   margin: 2rem auto;
 
   color: white;
-  font-family: DepartureMono, cursive;
+  font-family: DepartureMono, monospace;
   font-size: 2rem;
 }
 
@@ -31,8 +29,7 @@ main > * {
   /* prevent children from growing wider than the container */
   box-sizing: border-box;
   max-width: 100%;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  hyphens: auto;
 
   margin-inline: 1rem !important;
 }
@@ -46,65 +43,56 @@ h1 {
 h2 {
   margin: 0;
   padding: 0;
+  padding-block: 1rem;
   color: $Foreground;
 }
 
 .row {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.35ch; /* ensure visible spacing between children */
+  flex-wrap: nowrap; /* keep the whole group as a single non-wrapping run */
+  white-space: nowrap; /* prevent internal line breaks */
 
-  > :first-child {
-    text-align: left;
-    font-weight: bold;
-    color: $ForegroundSecondary;
-
-    &::after {
-      content: ":";
-      color: white;
-    }
+  > span {
+    flex: none;
   }
 
+  /* Fallback: ensure a small gap before an inline garbled component */
+  > .garbled {
+    margin-inline-start: 0.2ch;
+  }
+
+  .append-space::after {
+    content: " ";
+  }
   > :not(:first-child) {
     /* allow second column to grow/shrink and wrap without forcing overflow */
     flex: 1 1 auto;
-    min-width: 0; /* allow flex item to shrink below its content's min width */
-    overflow-wrap: anywhere;
-    word-break: break-word;
   }
 }
 
 .row.nosplit {
-  /* Render the title + text as inline content so wrapping behaves like a single line */
   display: inline;
 }
 
-.row.nosplit > .row_title {
-  display: inline;
-  margin-right: 0.5rem;
-}
-
-.row.nosplit > .row_text {
-  display: inline;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+.fix-ws {
+  display: inline-flex;
 }
 
 @media (max-width: 420px) {
-  /* keep behavior consistent on small screens */
   .row.nosplit {
     display: block;
   }
-  .row.nosplit > .row_title {
+
+  .fix-ws {
+    /* allow wrapping on small screens to avoid horizontal overflow */
     display: block;
-    margin-bottom: 0.25rem;
-  }
-  .row.nosplit > .row_text {
-    display: block;
+    white-space: normal;
+    gap: normal;
   }
 }
 
-/* small responsive tweak: on narrow screens stack label above values */
 @media (max-width: 350px) {
   .row {
     flex-wrap: wrap;
