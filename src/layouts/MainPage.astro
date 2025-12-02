@@ -1,0 +1,22 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import NavBar from "../components/NavBar.astro";
+
+export interface Props {
+  frame?: string;
+}
+const { frame = "" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={frame === "" ? "lumi" : `/${frame}`} description="" author="lumi" />
+  </head>
+
+  <body>
+    <span class="scan-line"></span>
+    <NavBar />
+    <iframe src={`frame/${frame}`} id="content-frame" name="content" title=""></iframe>
+  </body>
+</html>
