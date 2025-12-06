@@ -40,14 +40,14 @@ html::after {
 
 .scan-line {
   position: fixed;
-  opacity: 0.5;
+  opacity: 0.2;
   top: 0;
   left: 0;
   width: 100%;
   height: 4px;
   border-bottom: 2px solid #666;
-  background: #fff;
   animation: scan 2.8s infinite steps(48);
+  z-index: 1;
 }
 
 /* main page style */
