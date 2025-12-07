@@ -204,13 +204,25 @@ li {
   list-style-type: none;
 }
 
+hr {
+  border: solid 1px $fg;
+  box-shadow: $accent1-shadow-light;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
 .hbar {
   text-shadow: $accent1-shadow-heavy;
 }
 
 .highlight {
   font-weight: bold;
-  text-shadow: $accent1-shadow-heavy;
+  text-shadow:
+  0 0 5px  #90f1fe,
+  0 0 10px #90f1fe,
+  0 0 20px #90f1fe,
+  0 0 40px #90f1fe;
+
 }
 
 .left {
@@ -219,12 +231,6 @@ li {
 
 .center {
   text-align: center;
-}
-hr {
-  border: solid 1px $fg;
-  box-shadow: $accent1-shadow-light;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 /* keyframes */
