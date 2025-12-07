@@ -217,8 +217,7 @@ hr {
 
 .highlight {
   font-weight: bold;
-  text-shadow: 0 0 5px #90f1fe, 0 0 10px #90f1fe, 0 0 20px #90f1fe,
-    0 0 40px #90f1fe;
+  text-shadow: $accent1-shadow-heavy;
 }
 
 .left {

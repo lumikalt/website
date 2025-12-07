@@ -8,9 +8,9 @@ $accent2: #92acff;
 
 /* shadows */
 $accent1-shadow-light: 0px 0px 4px #90aafea0;
-$accent1-shadow-heavy: 0px 0px 12px #90f1fe;
+$accent1-shadow-heavy: 0px 0px 1px $accent1,  0px 0px 10px $accent1;
 $accent2-shadow-light: 0px 0px 4px #9294ff80;
-$accent2-shadow-heavy: 0px 0px 12px #9294ff;
+$accent2-shadow-heavy: 0px 0px 1px $accent2, 0px 0px 10px $accent2;
 
 /* animations */
 $q-move: 160ms ease-in-out;
