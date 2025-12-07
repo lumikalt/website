@@ -140,6 +140,7 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
+    opacity: 0.5;
     z-index: 0;
     background-attachment: fixed;
     pointer-events: none;
@@ -148,7 +149,7 @@ body {
   &::before {
     background: url("/glitchy-l.gif") repeat-y center left;
     background-size: 128px;
-    left: -50px;
+    left: 0;
     filter: blur(30px);
   }
 
