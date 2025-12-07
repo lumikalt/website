@@ -23,26 +23,19 @@ import NavBar from "../components/NavBar.astro";
 
           <span class="hbar">
             <span class="opt-hide">╶ ╶ ╶╶╶╶╶──</span>
-            ───────┘
-            <b>૮ ᴖﻌᴖა</b>
-            ┌───────
+            <span class="opt-hide2">─────</span>──┘
+            <b class="highlight">૮ ᴖﻌᴖა</b>
+            ┌──<span class="opt-hide2">─────</span>
             <span class="opt-hide">──╴╴╴╴╴ ╴ ╴</span>
           </span>
         </header>
 
         <main transition:animate="slide">
+          <p>Name: lumi</p>
           <p>Pronouns: it/its</p>
           <p>Age: Do <span class="highlight">not</span> ask.</p>
         </main>
       </article>
     </div>
-
-    <style lang="scss">
-      @media (max-width: 10px) {
-        .opt-hide {
-          display: none;
-        }
-      }
-    </style>
   </body>
 </html>
