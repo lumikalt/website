@@ -10,7 +10,6 @@ import rehypeBetterTooltips from "./src/utils/rehype-better-tooltips";
 import sitemap from "@astrojs/sitemap";
 
 import vercel from "@astrojs/vercel";
-import rehypeAttrs from "rehype-attr";
 import remarkDirectiveToHtml from "./src/utils/remark-directive-to-html";
 
 // https://astro.build/config
