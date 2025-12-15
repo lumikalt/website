@@ -44,3 +44,8 @@ $border: 2px solid $fg;
   font-weight: 400;
   src: url("/font/zelda-dx-tt-brk.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "sitelen seli kiwen mono";
+  src: url("/font/sitelenselikiwenmonoasuki.ttf") format('truetype');
+}
