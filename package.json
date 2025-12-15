@@ -19,6 +19,7 @@
     "autoprefixer": "latest",
     "cssnano": "latest",
     "rehype-katex": "latest",
+    "remark-directive": "latest",
     "remark-math": "latest",
     "rollup": "latest",
     "sass": "latest",
