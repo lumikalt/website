@@ -29,6 +29,12 @@ body {
   font-size: 2.5rem;
 }
 
+toki-pona,
+toki-pona * {
+  font-family: "sitelen seli kiwen mono", cursive;
+  font-size: 2.5rem !important;
+}
+
 time {
   font-size: 0.8em;
   color: $Foreground !important;
