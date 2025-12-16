@@ -371,3 +371,118 @@ anu works like or to separate two equivalent content words that fill the same gr
 14. toki sina li seme
 
 :::
+
+## chapter 5
+
+negation.
+
+### grammar
+
+ala can be placed after the verb to make the entire sentence negative, or after any other content word to negate that part of the sentence.
+
+to ask a question, double the verb and place ala between.
+or we can suffix the sentence with anu seme (... or what?).
+
+lon refers to being at a location in the most general sense, not specifically inside of, or on top of, something.
+
+### dictionary
+
+- ala :span[ala]{.tk}
+  - adj. not
+  - int. no
+
+- sin :span[sin]{.tk}
+  - adj. new, fresh
+
+- ilo :span[ilo]{.tk}
+  - n. tool; device, machine
+
+- pakala :span[pakala]{.tk}
+  - n. accident, mistake
+  - adj. broken, damaged, ruined
+  - shoot, darn; more vulgar translations
+
+- kute :span[kute]{.tk}
+  - v. listen, hear; obey
+  - n. ear
+
+- kalama :span[kalama]{.tk}
+  - v. make noise
+  - n. sound, noise
+
+- moli :span[moli]{.tk}
+  - v. be dead; kill
+  - n. death
+  - adj. dead
+
+- jaki :span[jaki]{.tk}
+  - adj. gross, dirty, unsanitary
+
+- wawa :span[wawa]{.tk}
+  - m. strong, powerful
+  - n. power
+
+- lupa :span[lupa]{.tk}
+  - n. hole; door; window
+
+- nena :span[nena]{.tk}
+  - n. bump; hill, mountain; nose
+
+- lon :span[lon]{.tk}
+  - prep. in, at, on
+  - v. exist, be real/true
+  - int. true, yeah, agreed
+
+### examples
+
+1. Which group built created that weird building?
+2. I drew a picture of cold noodles.
+3. I didn't draw a picture of cold noodles.
+4. I drew a picture of the noodles that weren't cold.
+5. I drew nothing.
+6. I'm sorry. / I made a mistake.
+7. You know this.
+8. Do you know this?
+9. Do you know this?
+10. Does the book club love the new short story?
+11. Did our big rock break the new computer?
+    1. No.
+    2. Yes.
+12. Did you hear that sound?
+13. That dead person is unsanitary. Did you touch it?
+14. Do you know the sun's direction?
+15. I'm at the building.
+16. Are we gonna play at your house?
+17. Do they have a house at a large mountain?
+    1. Yes (They do have one).
+18. The drunk group didn't die by the cave.
+19. Did you eat the fresh fruit?
+20. It's true, Vincent did paint his ear.
+
+:::toki-pona
+
+1. kulupu seme li pali e tomo nasa ni
+2. mi sitelen e pan linja lete
+3. mi sitelen ala e pan linja lete
+4. mi sitelen e pan linja. ona li ala lete
+5. mi sitilen e ala
+6. mi pakala
+7. sina sona e ni
+8. sina sona ala sona e ni
+9. sina sona e ni anu seme
+10. kulupu lipu li olin ala olin e lipu lili sin
+11. kiwen suli mi li pakala ala pakala e ilo sitelen sin
+    1. pakala ala
+    2. pakala
+12. sina kute ala kute e kalama ni
+13. jan moli ni li jaki　sina pilin ala pilin e ona
+14. sina sona ala sona e nasin suno
+15. mi lon tomo
+16. mi musi lon tomo sina anu seme
+17. ona li jo ala jo e tomo lon nena suli
+    1. jo
+18. kulupu nasa li moli ala lon lupa ma
+19. sina moku ala moku e kili sin
+20. lon　jan \[Winsen] sitelen kute ona
+
+:::
