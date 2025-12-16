@@ -269,12 +269,12 @@ for the vocative, o goes after the subject
 
 :::toki-pona
 
-1. ma Kanata
+1. ma [Kanata]
 2. o pona
 3. jan-pona mi o lape li suli
 4. o seli e moku
 5. o sitelen e nimi sina
-6. jan "Susan" o jan "Atan" li mama sina
+6. jan [Susan] o jan [Atan] li mama sina
 7. nasin Isilan li suli
 8. kulupu o lukin suno li seli mute
 9. jan-sona o jan Sonja li pali e toki-pona
@@ -288,9 +288,10 @@ questions.
 
 ### grammar
 
-seme takes the place of any content word in a sentence to ask a question.
-
 a content word is something on its own, rather than a particle.
+
+seme takes the place of any content word in a sentence to ask a question.
+seme as a verb can replace a generic question, so "sina seme" can mean "what are you doing ?" (lit. you what?).
 
 anu works like or to separate two equivalent content words that fill the same grammatical role within the sentence.
 

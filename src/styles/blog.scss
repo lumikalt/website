@@ -30,9 +30,11 @@ body {
 }
 
 toki-pona,
-toki-pona * {
+toki-pona *,
+.tk,
+.tk * {
   font-family: "sitelen seli kiwen mono", cursive;
-  font-size: 2.5rem !important;
+  // font-size: 2.5rem !important;
 }
 
 time {
