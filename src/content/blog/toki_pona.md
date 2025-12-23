@@ -483,6 +483,6 @@ lon refers to being at a location in the most general sense, not specifically in
     1. jo
 18. kulupu nasa li moli ala lon lupa ma
 19. sina moku ala moku e kili sin
-20. lon　jan \[Winsen] sitelen kute ona
+20. lon jan \[Winsen] sitelen kute ona
 
 :::
