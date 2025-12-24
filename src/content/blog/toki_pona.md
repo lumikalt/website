@@ -269,12 +269,12 @@ for the vocative, o goes after the subject
 
 :::toki-pona
 
-1. ma [Kanata]
+1. ma [kama .. nanpa .. tawa ..]
 2. o pona
 3. jan-pona mi o lape li suli
 4. o seli e moku
 5. o sitelen e nimi sina
-6. jan [Susan] o jan [Atan] li mama sina
+6. jan [suno .. sama .. li] o jan [ale tan ::] li mama sina
 7. nasin Isilan li suli
 8. kulupu o lukin suno li seli mute
 9. jan-sona o jan Sonja li pali e toki-pona
@@ -483,6 +483,6 @@ lon refers to being at a location in the most general sense, not specifically in
     1. jo
 18. kulupu nasa li moli ala lon lupa ma
 19. sina moku ala moku e kili sin
-20. lon jan \[Winsen] sitelen kute ona
+20. lon jan \[wile .. ni seli .. ni] sitelen kute ona
 
 :::
