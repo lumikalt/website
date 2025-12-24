@@ -1,0 +1,53 @@
+---
+// https://github.com/withastro/starlight/discussions/1573
+
+import { spawnSync } from "node:child_process";
+
+// Use `git log` to get a list of all changes to the docs.
+// The format is:
+// ~~~~~~~~~~                      <= separator
+// 1709037743                      <= commit time (seconds since Unix epoch)
+// Commit message                  <= the commit message
+//
+// src/content/docs/example.md.    <= paths to one
+// ...                             <= or more files changed in this commit
+const separator = "~~~~~~~~~~";
+const result = spawnSync(
+  "git",
+  ["log", `--format=${separator}%n%ct%n%s`, "--name-only"],
+  { encoding: "utf-8" }
+);
+
+// Iterate over the lines of git logging to generate a structured array of entries:
+const log = result.stdout
+  .split(separator)
+  .filter(Boolean)
+  .map(logEntry => logEntry.split("\n").filter(Boolean))
+  .map(([timestamp, message, ...files]) => ({
+    date: new Date(parseInt(timestamp ?? "0") * 1000),
+    message,
+    files
+  }))
+  .filter(({ files }) => files.length);
+
+// We now have an array of `{ message: string; date: Date; files: string[] }`
+// and we can use it to build our page.
+---
+
+<ul class="changelog">
+  {
+    log.map(entry => (
+      <>
+        <hr />
+        {entry.date.toLocaleDateString("zh", { dateStyle: "short" })}:{" "}
+        {entry.message}
+        <div style="margin: 1rem;" />
+        <div style="padding-left: 2rem; line-height: 2rem;">
+          {entry.files.map(path => (
+            <li>{path}</li>
+          ))}
+        </div>
+      </>
+    ))
+  }
+</ul>
