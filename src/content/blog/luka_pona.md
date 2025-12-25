@@ -145,7 +145,7 @@ there are 5:
 - kepeken
 - sama
 
-they are signed in the format A V _ B Co-V or B Co-V _ A V.
+they are signed in the format A V \_ B Co-V or B Co-V \_ A V.
 
 examples:
 
