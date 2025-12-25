@@ -1,0 +1,37 @@
+---
+import "../styles/style.scss";
+
+import BaseHead from "../components/BaseHead.astro";
+import NavBar from "../components/NavBar.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title="lumi" description="" author="lumi" />
+  </head>
+
+  <body>
+    <span class="scan-line"></span>
+
+    <NavBar />
+
+    <div class="frame">
+      <article>
+        <header class="center">
+          <h2 transition:animate="slide">[ ~/contacts ]</h2>
+        </header>
+
+        <main transition:animate="slide">
+          <p>if you want to communicate with this one, you can do it via:</p>
+
+          <ul>
+            <li>signal: lumi.111</li>
+            <li>discord: connectionobsolete (friend requests enabled for friends-of-friends)</li>
+            <li>fediverse: @lumi@heckin.how
+          </ul>
+        </main>
+      </article>
+    </div>
+  </body>
+</html>
