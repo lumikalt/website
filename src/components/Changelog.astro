@@ -42,7 +42,7 @@ const log = result.stdout
         {entry.date.toLocaleDateString("zh", { dateStyle: "short" })}:{" "}
         {entry.message}
         <div style="margin: 1rem;" />
-        <div style="padding-left: 2rem; line-height: 2rem;">
+        <div style="padding-left: 2rem;">
           {entry.files.map(path => (
             <li>{path}</li>
           ))}
