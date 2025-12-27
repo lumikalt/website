@@ -1,13 +1,31 @@
 ---
+import { getCollection } from "astro:content";
+
 const github = "https://github.com/lumikalt";
+
+const blog = await getCollection("blog");
+const blogPosts = blog
+  .sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf())
+  .map(post => ({
+    title: post.data.title,
+    url: `/blog/${post.slug}/`
+  }));
 ---
 
 <div class="nav-bar">
   <nav>
-    <a href="/" target="_self">.</a>/
+    <a href="/" target="_self">~</a>/
 
     <ul>
       <li><a href="/about" target="_self">about</a></li>
+      <li><a href="/blog" target="_self">blog</a></li>
+      <ul>
+        {
+          blogPosts.map(post => (
+            <li class="depth-2"><a href={post.url} target="_self">{post.title}</a></li>
+          ))
+        }
+      </ul>
       <li><a href="/contacts" target="_self">contacts</a></li>
       <li><a href="/changelog" target="_self">changelog</a></li>
       <li><a href={github} target="_blank" rel="noreferrer">github</a></li>

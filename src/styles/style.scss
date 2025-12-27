@@ -1,5 +1,7 @@
 @use "./var" as *;
 
+@use "sass:meta";
+
 /* the digital ibuprofen equivalent */
 * {
   box-sizing: border-box;
@@ -99,16 +101,22 @@ body {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
-  }
 
-  nav ul li::before {
-    content: "├";
-    margin-right: 12px;
-  }
+    li::before {
+      content: "├";
+      margin-right: 12px;
+    }
+    li:last-child::before {
+      content: "└";
+      margin-right: 12px;
+    }
 
-  nav ul li:last-child::before {
-    content: "└";
-    margin-right: 12px;
+    .depth-2::before {
+      content: "│ ├";
+    }
+    .depth-2:last-child::before {
+      content: "│ └";
+    }
   }
 
   nav a[href^="https://"]
@@ -319,4 +327,8 @@ hr {
   body {
     height: 100vh;
   }
+}
+
+.blog {
+  @include meta.load-css("blog.scss");
 }
