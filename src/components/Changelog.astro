@@ -39,8 +39,11 @@ const log = result.stdout
     log.map(entry => (
       <>
         <hr />
-        {entry.date.toLocaleDateString("zh", { dateStyle: "short" })}:{" "}
-        {entry.message}
+        {entry.date.toLocaleDateString("zh", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric"
+        })}: {entry.message}
         <div style="margin: 1rem;" />
         <div style="padding-left: 2rem;">
           {entry.files.map(path => (
