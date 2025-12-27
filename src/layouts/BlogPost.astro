@@ -1,10 +1,9 @@
 ---
-import "../styles/blog.scss";
+import "../styles/style.scss";
 
 import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import NavBar from "../components/NavBar.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
@@ -13,30 +12,42 @@ const { title, description, date, latex = false } = Astro.props;
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} author={"lumi"} needsLatex={latex} />
+    <BaseHead
+      title={title}
+      description={description}
+      author={"lumi"}
+      needsLatex={latex}
+    />
   </head>
 
   <body>
-    <Header />
-    <main>
-      <article>
-        <h1 class="title">{title}</h1>
-        <time>
-          {
-            date.toLocaleDateString("en-uk", {
-              year: "numeric",
-              month: "long",
-              day: "numeric"
-            })
-          }
-        </time>
+    <span class="scan-line"></span>
 
-        <hr />
-        <div class="content">
-          <slot />
-        </div>
+    <NavBar />
+
+    <div class="frame">
+      <article>
+        <header class="center">
+          <h2 transition:animate="slide">{title}</h2>
+        </header>
+
+        <main transition:animate="slide">
+          <time>
+            {
+              date.toLocaleDateString("zh", {
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric"
+              })
+            }
+          </time>
+
+          <hr />
+          <div class="blog">
+            <slot />
+          </div>
+        </main>
       </article>
-    </main>
-    <Footer />
+    </div>
   </body>
 </html>

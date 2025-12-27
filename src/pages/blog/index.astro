@@ -1,9 +1,8 @@
 ---
-import "../../styles/blog.scss";
+import "../../styles/style.scss";
 
 import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
+import NavBar from "../../components/NavBar.astro";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("blog")).sort(
@@ -14,44 +13,39 @@ const posts = (await getCollection("blog")).sort(
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={"lumi blog"} description={":3"} author={"lumi"} />
-    <style>
-      ul {
-        list-style-type: none;
-        padding: unset;
-      }
-      ul li {
-        display: flex;
-      }
-      ul li time {
-        flex: 0 0 130px;
-        font-style: italic;
-        color: #595959;
-      }
-    </style>
+    <BaseHead title="blog" description="" author="lumi" />
   </head>
+
   <body>
-    <Header />
-    <main>
-      <section>
-        <ul>
-          {
-            posts.map(post => (
-              <li>
-                <time>
-                  {`${post.data.date.getFullYear()}.${String(
-                    post.data.date.getMonth() + 1
-                  ).padStart(2, "0")}.${String(
-                    post.data.date.getDate()
-                  ).padStart(2, "0")}`}
-                </time>
-                <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </main>
-    <Footer />
+    <span class="scan-line"></span>
+
+    <NavBar />
+
+    <div class="frame">
+      <article>
+        <header class="center">
+          <h2 transition:animate="slide">~/blog</h2>
+        </header>
+
+        <main transition:animate="slide">
+          <ul>
+            {
+              posts.map(post => (
+                <li>
+                  <time>
+                    {post.data.date.toLocaleDateString("zh", {
+                      day: "2-digit",
+                      month: "2-digit",
+                      year: "numeric"
+                    })}
+                  </time>
+                  <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+                </li>
+              ))
+            }
+          </ul>
+        </main>
+      </article>
+    </div>
   </body>
 </html>
