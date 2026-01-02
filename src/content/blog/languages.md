@@ -1,6 +1,6 @@
 ---
 title: languages
-description: the languages this one knows or is learning
+description: ""
 date: 2025.07.16
 ---
 
@@ -20,8 +20,14 @@ been on the internet since it was 10 and started learning english in the 1st gra
 
 had french classes from the 5th to the 9th grade. it's fine... when lumi was in france and switzerland's french area it was able to read stuff in the groceries store since the employees didn't know english.
 
-## korean
+## korean, mandarin
 
-lumi's trying to learn some korean to read web novels straight from their raws. the reader might've noticed the web novels section of the interests page has some.
+tried to learn korean and mandarin during 2025 summer, but it was a short term hyperfocus, still got the documents lumi wrote with some grammar and vocabulary for the future.
 
-안녕! 이건 루미야.
+## toki pona
+
+decided to learn this. still can't always remember every word but getting there.
+
+## luka pona
+
+toki pona's sign language sibling. only learned a tiny bit as of now.
