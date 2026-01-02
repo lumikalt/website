@@ -31,6 +31,7 @@ lumi spends a lot of its time reading, mostly sci-fi and fantasy. corrently read
 - [three body problem][threebody] - also the whole trilogy & the turned-official fanfic. that one solves some gaps and is lovely. Da Shi is the coolest.
 - [discworld][discworld] - truly incredible, hilarious worldbuilding, with funny dialogue and characters.
 - [a certain magical index][magicalindex] - incredibly well written magic/religion vs science setting, and the Misakas are so cool...
+- [the irregular at magic highschool][mahouka] - single best magic system, imo. bland protag but high-tech magic is the best.
 
 ### web novels
 
@@ -42,8 +43,9 @@ lumi spends a lot of its time reading, mostly sci-fi and fantasy. corrently read
 
 also likes watching some shows. [dark][dark], [the expanse][expanse], [for all mankind][forallmankind], all very good sci-fi.
 
-not a big anime watcher, especially since it's extremely picky. there's [mahouka][mahouka] (good books too!).
+not a big anime watcher, especially since it's extremely picky.
 [dungeon meshi][dungeonmeshi] is really really cool, food is yummy. anime about food is unexpectedly good.
+[charlotte][charlotte] has a sweet story, and incredible soundtrack, zhiend is awesome.
 
 ## games
 
@@ -68,6 +70,7 @@ still love the [littlebigplanet][lbp] games, especially karting, defo its favori
 [forallmankind]: https://en.wikipedia.org/wiki/For_All_Mankind_(TV_series)
 [mahouka]: https://en.wikipedia.org/wiki/The_Irregular_at_Magic_High_School
 [dungeonmeshi]: https://en.wikipedia.org/wiki/Delicious_in_Dungeon
+[charlotte]: https://en.wikipedia.org/wiki/Charlotte_(TV_series)
 [lbp]: https://en.wikipedia.org/wiki/LittleBigPlanet
 [locoroco]: https://en.wikipedia.org/wiki/LocoRoco
 [xcom]: https://en.wikipedia.org/wiki/XCOM:_Enemy_Unknown
