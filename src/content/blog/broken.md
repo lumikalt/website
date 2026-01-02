@@ -9,7 +9,7 @@ date: 2026.01.02
 lumi has a unique recessive/mitochondrial genetic illness, which no predecessor expresses, and causes several problems with nerves.
 
 - cataracts;
-- coclear nerve damage, especially on the right;
+- cochlear nerve damage, especially on the right;
 - cavus feet;
 - hand degeneration.
 
