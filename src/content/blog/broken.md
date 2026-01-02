@@ -1,7 +1,7 @@
 ---
-title: body & mind
+title: broken
 description: "broken doll"
-date: "2026.01.02"
+date: 2026.01.02
 ---
 
 ## body
