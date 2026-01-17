@@ -1,5 +1,9 @@
 @use "./var" as *;
 
+* {
+  text-align: justify;
+}
+
 ul li {
   list-style-type: square;
 
@@ -18,4 +22,8 @@ ol li {
 
 .tk, toki-pona {
   font-family: "sitelen seli kiwen mono";
+}
+
+.katex-html {
+  display: none;
 }
