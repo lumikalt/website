@@ -187,7 +187,7 @@ ma tomo ni pi (jan ala) li pona lon anu seme <br>
 mi sona ala tan ni n( &nbsp; ) <br>
 pona li ante tawa jan ante <br>
 jan ale li ante &nbsp; ni li lon ala :: &nbsp; jan li sama jan ante <br>
-ilo li pona e jan la ni li ken ike e jan ante <br>
+ijo li pona e jan la ni li ken ike e jan ante <br>
 kon jan ale li jo e selo ante e suli ante <br>
 tenpo sin la pilin jan li kama suli la kon jan li ken ante <br>
 wile jan li ken ante <br>
@@ -252,3 +252,152 @@ mi pona e wile ni la n( &nbsp; ) <br>
 mi en jan taso mi li lon ala poka lon tenpo ale 
 
 :::
+
+---
+
+# Book 5: Little By Little
+
+Many days have passed since you... <br>
+...brought me to this place. <br>
+You still go outside, even when you have me. <br>
+You experience many things outside. <br>
+And then you come home and tell me about them. <br>
+Sometimes you even take me outside. <br>
+Even though I'm one of them. <br>
+You tell me that I can do whatever I want with my things, as if we were equals. <br>
+Little by little, the time with you and me passes. <br>
+Little by little, this space becomes yours and mine. <br>
+Little by little, the distance is moving. <br>
+Yours and my distance. <br>
+But has the distance between us gotten smaller? <br>
+Or has it grown bigger? <br>
+I don't know. <br>
+I do know that I want it to be smaller. <br>
+But then the same thing would happen again. <br>
+"It won't be the same." <br>
+"This person isn't that person." <br>
+"It's someone else. People are all different." <br>
+"Even if people look the same... <br>
+"...they're all a little bit different." <br>
+"No two hearts are exactly the same." <br>
+"That's why the same thing won't happen." <br>
+Then is that person the "someone just for me?" <br>
+I don't know. <br>
+But... <br>
+...I'm starting to hope he is. <br>
+In this place that this person brought me to... <br>
+Little by little... <br>
+...little by little... <br>
+...I'm beginning to hope that... <br>
+...I can start finding happiness. <br>
+But... <br>
+...someone will come to stop it. <br>
+Someone will come to prevent me from finding the someone just for me. <br>
+And... <br>
+That person will take care of me. <br>
+But it's not because I'm me. <br>
+That person is kind. <br>
+To all people and all of them... <br>
+...he is kind. <br>
+Right. <br>
+That person is kind... <br>
+...and probably not just towards me. <br>
+But even if that person is kind to all, his kindness should be a little different each time. <br>
+He can't be kind in the same way to everyone... <br>
+...because that person is a person. <br>
+That's right. <br>
+A person's heart can't stay the same forever. <br>
+A person's heart changes a little bit everyday... <br>
+...because that is their nature. <br>
+It can be different. <br>
+It doesn't always have to be the same. <br>
+If he... <br>
+...finds in me the things that make me special. <br>
+If he likes me because I am me. <br>
+If that person... <br>
+...takes the time to find what makes me different from the others... <br>
+If he likes me because I am me... <br>
+...if that happens... <br>
+...we may be able to become something a little different from before. <br>
+I may not have to lose what's most important to me... <br>
+...like last time. <br>
+What's most important... <br>
+...what's most important to them and to people... <br>
+...is something precious... <br>
+...something you can't lose. <br>
+The proof that I am who I am... <br>
+...the special proof. <br>
+That proof will tell me who my someone is. <br>
+That special, special... <br>
+..."someone just for me."
+
+
+:::toki-pona
+
+# lipu-nanpa luka :: te tenpo lili sin to
+
+tenpo suno mute pini la sina jo e mi lon ma-ni <br>
+sina jo e mi &nbsp; taso la sina awen tawa insa ala <br>
+sina pilin e ijo mute lon insa ala <br>
+sina toki e ijo ni tawa mi la sina li lon tomo <br>
+mi en ona a li wan n( &nbsp; ) <br>
+taso la tenpo la mi tawa insa ala lon poka sina <br>
+sina toki e ni :: &nbsp; te sina ken ale kepeken ijo sina to <br>
+mi sama ala sina &nbsp; taso sina toki tawa mi sama jan ale <br>
+tenpo lili sin la mi en sina li lon poka <br>
+tenpo lili sin la ma-ni li kama e mi e tu <br>
+tenpo lili sin poka li ante <br>
+poka pi (mi tu) la n( &nbsp; ) <br>
+taso ni li lili anu suli <br>
+mi sona ala <br>
+mi sona e ni :: wile la ni li lili <br>
+taso ni la ijo sama li lon lon tenpo sin <br>
+te ni li lon ala <br>
+&nbsp; ona li sama ala jan monsi <br>
+&nbsp; ona li ante &nbsp; jan ale li ante <br>
+&nbsp; jan ale li sama tawa lukin <br>
+&nbsp; taso pilin jan tu li ante <br>
+&nbsp; la li lon ala to <br>
+la ona li jan taso mi anu seme <br>
+mi sona ala <br>
+taso n( &nbsp; ) mi kama wile e ni <br>
+tenpo lili sin n <br>
+tenpo lili sin n <br>
+la mi kama wile ni :: <br>
+ona li jo e mi tawa ma-ni la n(nbsp; ) <br>
+n( &nbsp; ) mi ken alasa e pona lon ni <br>
+taso n jan li kama pini e ni <br>
+jan li wile e ni :: mi ken ala kama jo e jan taso mi <br>
+kin la n( &nbsp; ) jan taso mi li awen e mi <br>
+taso tan li ni ala :: &nbsp; mi li mi <br>
+ona li pona tawa ale lon tenpo ale <br>
+ona li pona n <br>
+lon <br>
+ken la ona li pona n( &nbsp; ) taso ala tawa mi <br>
+taso la sona mi la pona ona li mute lon tenpo sin <br>
+mi ale li ken ala pona tawa ale n( &nbsp; ) <br>
+tan ni :: &nbsp; jan li jan <br>
+lon <br>
+pilin jan li ken ala awen lon tenpo ala <br>
+pilin jan li mute lili lon tenpo suno sin n tan ni :: nasin pilin <br>
+ken la lon ala <br>
+ken la pilin li ken awen <br>
+jan taso mi li lukin e ni :: &nbsp; mi li wan tan ijo <br>
+ona li pilin pona e mi tan ni :: &nbsp; mi li mi <br>
+ona li alasa e ni :: &nbsp; mi ante tan ilo <br>
+ona li pilin pona e mi tan ni :: &nbsp; mi li mi <br>
+la n( &nbsp; ) ale ni li lon n <br>
+la mi en ona li ken kama e ijo pi (ante lili) <br>
+ken la mi ken weka ala e ijo suli suli tawa mi <br>
+n( &nbsp; ) sama ala tenpo pini <br>
+ijo suli li n <br>
+ijo suli li tawa ona tawa jan n <br>
+ijo ni li suli <br>
+ijo ni li ken ala weka tawa sina <br>
+la sona mi la mi li mi <br>
+la sona suli ni toki e jan taso mi tawa mi <br> 
+ni suli suli li te jan taso mi to
+
+:::
+
+---
