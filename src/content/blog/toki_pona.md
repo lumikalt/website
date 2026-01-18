@@ -486,3 +486,4 @@ lon refers to being at a location in the most general sense, not specifically in
 20. lon jan \[wile .. ni seli .. ni] sitelen kute ona
 
 :::
+

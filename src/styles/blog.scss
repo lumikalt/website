@@ -1,5 +1,10 @@
 @use "./var" as *;
 
+h1, h2 {
+  font-family: inherit;
+  line-height: 3rem;
+}
+
 * {
   text-align: justify;
 }
@@ -21,7 +26,7 @@ ol li {
 }
 
 .tk, toki-pona {
-  font-family: "sitelen seli kiwen mono";
+  font-family: "sitelen seli kiwen mono" !important;
 }
 
 .katex-html {
