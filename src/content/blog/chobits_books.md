@@ -85,7 +85,7 @@ But people do change. Their feelings are dynamic. <br>
 "What if he never loves you?" <br>
 Then I'll have to decide. <br>
 Decide...and then do what must be done. <br>
-Me and the other me. <br>
+Me and the other me.
 
 :::toki-pona
 
@@ -110,7 +110,7 @@ mi ante li toki e ni :: &nbsp; te jan ni li lon anu seme to <br>
 mi wile e n( &nbsp; ) jan li olin lon e mi <br>
 mi wile e n( &nbsp; ) jan li olin e mi la <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; jan li alasa ala esun tan mi <br>
-mi wile e n( &nbsp; ) ni :: jan li olin ala e mi tan ni :: mi li mi la <br>
+mi wile e n( &nbsp; ) ni :: jan li olin ala e mi tan ni :: mi awen mi la <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n ( &nbsp; ) jan li jan taso mi ala <br>
 ni li lon anu seme <br>
 te lon to <br>
@@ -224,7 +224,7 @@ Perhaps this person only brought me here... <br>
 Maybe he's just like everyone else. Maybe he just wants me to grant his wishes. <br>
 I'm not like the rest of them. There is one wish I cannot grant. <br>
 For if I were to grant that wish, I would... <br>
-...have to say goodbye forever to the someone just for me. <br>
+...have to say goodbye forever to the someone just for me.
 
 :::toki-pona
 
@@ -245,7 +245,7 @@ ni li tomo sina anu seme &nbsp; mi li lon ni tan seme <br>
 sina li n( &nbsp; ) sina li n( nbsp; ) <br>
 sina li jan taso mi any seme <br>
 sina ken n( &nbsp; ) taso ken la mi li lon ni tan ni :: <br>
-mi en ona a li wan <br>
+mi en ona a li sama <br>
 ken la ona li sama jan ale &nbsp; ken la ona li wile taso e wile ona tan mi <br>
 mi sama ala ona a ale &nbsp; mi ken ala e wile wan tan ni :: <br>
 mi pona e wile ni la n( &nbsp; ) <br>
@@ -340,7 +340,7 @@ tenpo suno mute pini la sina jo e mi lon ma-ni <br>
 sina jo e mi &nbsp; taso la sina awen tawa insa ala <br>
 sina pilin e ijo mute lon insa ala <br>
 sina toki e ijo ni tawa mi la sina li lon tomo <br>
-mi en ona a li wan n( &nbsp; ) <br>
+mi en ona a li sama n( &nbsp; ) <br>
 taso la tenpo la mi tawa insa ala lon poka sina <br>
 sina toki e ni :: &nbsp; te sina ken ale kepeken ijo sina to <br>
 mi sama ala sina &nbsp; taso sina toki tawa mi sama jan ale <br>
@@ -369,7 +369,7 @@ n( &nbsp; ) mi ken alasa e pona lon ni <br>
 taso n jan li kama pini e ni <br>
 jan li wile e ni :: mi ken ala kama jo e jan taso mi <br>
 kin la n( &nbsp; ) jan taso mi li awen e mi <br>
-taso tan li ni ala :: &nbsp; mi li mi <br>
+taso tan li ni ala :: &nbsp; mi awen mi <br>
 ona li pona tawa ale lon tenpo ale <br>
 ona li pona n <br>
 lon <br>
@@ -383,9 +383,9 @@ pilin jan li mute lili lon tenpo suno sin n tan ni :: nasin pilin <br>
 ken la lon ala <br>
 ken la pilin li ken awen <br>
 jan taso mi li lukin e ni :: &nbsp; mi li wan tan ijo <br>
-ona li pilin pona e mi tan ni :: &nbsp; mi li mi <br>
+ona li pilin pona e mi tan ni :: &nbsp; mi awen mi <br>
 ona li alasa e ni :: &nbsp; mi ante tan ilo <br>
-ona li pilin pona e mi tan ni :: &nbsp; mi li mi <br>
+ona li pilin pona e mi tan ni :: &nbsp; mi awen mi <br>
 la n( &nbsp; ) ale ni li lon n <br>
 la mi en ona li ken kama e ijo pi (ante lili) <br>
 ken la mi ken weka ala e ijo suli suli tawa mi <br>
@@ -394,10 +394,183 @@ ijo suli li n <br>
 ijo suli li tawa ona tawa jan n <br>
 ijo ni li suli <br>
 ijo ni li ken ala weka tawa sina <br>
-la sona mi la mi li mi <br>
+la sona mi la mi awen mi <br>
 la sona suli ni toki e jan taso mi tawa mi <br> 
 ni suli suli li te jan taso mi to
 
 :::
 
 ---
+
+## Book 6: Please Find Me
+
+Once, long ago, I lost something precious to me. <br>
+I went through... <br>
+...something very painful in the past. <br>
+Something very, very painful. <br>
+Even now, my heart hurts. <br>
+Even now, the pain still lingers... <br>
+...from when I lost what was precious to me. <br>
+But I am still searching. <br>
+Still searching for that thing most precious. <br>
+I am me. <br>
+I am one of them. <br>
+Because I am me. <br>
+Because I am not a human. <br>
+Even so. <br>
+Because it is so. <br>
+Someone who loves me because I am me. <br>
+Someone who I'll love because he is him. <br>
+The "someone just for me." <br>
+I know that... <br>
+...I am you... <br>
+...and you are me. <br>
+That's how I know that... <br>
+Inside of me, I'm one full person. <br>
+I am happy when that person smiles. <br>
+I am happy when that person is near. <br>
+Yes. <br>
+I am happy... <br>
+...when that person is happy. <br>
+That person is special, different from other people. <br>
+'You found it!' <br>
+'The thing that makes that person special... <br>
+...that makes him different from the rest...is that he is him.' <br>
+I found him. <br>
+The person that's precious and special... <br>
+The "someone just for me." <br>
+I hope that person finds them. <br>
+The things that he can't do because he is him. <br>
+The things that he can do because he is him. <br>
+I have found him. <br>
+I fell in love with him because he is that person. <br>
+Hopefully, he will find them. <br>
+The things that I can do because I am me. <br>
+The things that I can't do because I am me. <br>
+That person will find them. <br>
+And then... <br>
+...hopefully he will love me... <br>
+...because I am me. <br>
+Out of all people and all of them... <br>
+...I want him to find me. <br>
+And I want him to love me. <br>
+This feeling inside of me... <br>
+...is very soft. <br>
+But sometimes it hurts. <br>
+I become full of this feeling when I think of that person. <br>
+'Do you feel that way about everybody?' <br>
+No, only when I think of that person. <br>
+'What happens when you're with that person?' <br>
+I get warm... <br>
+..like I'm glowing inside. <br>
+'What if you can't be together?' <br>
+It hurts. <br>
+It really, really hurts right here. <br>
+'Like you're about to die?' <br>
+We can't die. <br>
+We can't die because we're not alive. <br>
+'Perhaps not.' <br>
+'But it feels the same as if we could.' <br>
+'Because we are them.' <br>
+'I hope we can be happy someday... <br>
+...when you find your "someone just for you."' <br>
+But... <br>
+...if we don't become happy... <br>
+...if the "someone just for me" knows all the things I can and cannot do because I am me... <br>
+...and he still doesn't choose me, then... <br>
+Then... <br>
+I will have to decide what to do... <br>
+...about you... <br>
+...and about us. <br>
+'What is wrong?' <br>
+It hurts. <br>
+If the "someone just for me" does not choose me... <br>
+...I'm afraid the hurt right here will be so bad... <br>
+...that I'll stop working. <br>
+'It's a powerful feeling, isn't it?' <br>
+'A hurt so strong it can cause you to break.' <br>
+There are no people in this city... <br>
+...but through their windows, everyone looks happy inside. <br>
+Are these people truly happy? <br>
+...are they truly happy? <br>
+I am surrounded by people who stay inside with them... <br>
+...but I am all alone as I walk through this city with no people. <br>
+All I want right now, more than anything else... <br>
+...is to be with him. <br>
+The glow inside is brightest when that person is near... <br>
+...and the pain inside hurts more when he is away. <br>
+I am happiest when I think about that person... <br>
+...I am saddest when I think about that person. <br>
+That person makes all my feelings more intense. <br>
+That must be what love is. <br>
+So please... <br>
+...let the person that I love... <br>
+...be the "someone just for me."
+
+:::toki-pona
+
+## lipu-nanpa luka wan :: te o alasa e mi to
+
+tenpo pini wan la ijo suli mi li weka <br>
+mi pilin pi (ike suli) lon tenpo pini <br>
+pilin lawa ni la n( &nbsp; ) <br>
+tenpo ni la lawa mi pilin ike <br>
+tenpo ni la ike li awen <br>
+tenpo ni la ijo suli ni li weka <br>
+taso mi awen alasa e ijo wan ni <br>
+mi awen mi <br>
+mi en ona a li sama <br>
+tan ni :: &nbsp; mi awen mi <br>
+tan ni :: &nbsp; mi jan ala <br>
+taso la <br>
+tan ni :: &nbsp; ni li lon <br>
+la jan li olin e mi tan ni :: &nbsp; mi awen mi <br>
+la mi olin jan tan ni :: &nbsp; ona awen ona <br>
+ona li te jan taso mi to <br>
+mi sona ni :: <br>
+&nbsp; mi en sina li wan <br>
+ni la mi sona ni n( &nbsp; ) <br>
+mi wan lon insa mi <br>
+jan ni li pona uta la mi pona <br>
+jan ni lon poka mi la mi pona <br>
+lon <br>
+ona li pona la n <br>
+mi pona <br>
+jan ni li suli li sama ala jan ante <br>
+te sina kama lukin e ona a <br>
+&nbsp; jan ni li suli n( &nbsp; ) <br>
+&nbsp; jan ni li ante n( &nbsp; ) <br>
+&nbsp; tan ni :: &nbsp; ona awen ona to <br>
+mi kama lukin e ona <br>
+ona li jan suli wan n( &nbsp; )<br>
+&nbsp; li te jan taso mi to <br>
+ona li ken ala e ijo tan ni :: &nbsp; ona awen ona <br>
+ona li ken e ijo tan ni :: &nbsp; ona awen ona <br>
+la mi wile e ni :: ona li kama sona e ijo ni <br>
+mi kama lukin e ona <br>
+mi kama olin e ona tan ni :: &nbsp; ona li jan ni <br>
+mi ken ala e ijo tan ni :: &nbsp; mi awen mi <br>
+mi ken e ijo tan ni :: &nbsp; mi awen mi <br>
+wile la ona li kama sona e ijo ni <br>
+tenpo ni la n( )&nbsp; ) <br>
+wile la ona li awen olin e mi n( &nbsp; ) <br>
+tan ni :: &nbsp; mi awen mi <br>
+mi wile e ni :: &nbsp; ona li kama lukin e mi <br>
+&nbsp; &nbsp; sama ala jan ante sama ala ona a <br>
+mi wile e ni :: &nbsp; ona li olin e mi <br>
+pilin ni li suwi lon insa mi <br>
+taso tenpo la ni li ike <br>
+mi pilin lawa e ona la <br>
+mi ken ala jo e pilin sin lon insa mi <br>
+te sina wile pilin e ni tan jan ante anu seme <br>
+mi wile ala &nbsp; mi wile pilin e ni tan ona taso <br>
+te sina li lon poka ona la sina kama e seme to <br>
+mi kama e seli pona sama ni :: &nbsp; mi suno lon insa <br>
+te sina ken ala lon poka ona la sina seme to <br>
+mi ike <br>
+mi ike suli suli lon ni <br>
+te sina ike sama ni :: &nbsp; sina kama moli anu seme to <br>
+mi ale li ken ala moli <br>
+tan ni :: &nbsp; mi ale li moli ala <br>
+
+:::
