@@ -23,7 +23,8 @@
     "remark-math": "latest",
     "rollup": "latest",
     "sass": "latest",
-    "sharp": "latest"
+    "sharp": "latest",
+    "@vercel/analytics": "latest"
   },
   "devDependencies": {
     "unist-util-visit": "latest"
