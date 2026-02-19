@@ -15,11 +15,9 @@ lumi is learning Japanese so writing this to be able to take longer-lasting note
 - [cure dolly](https://kellenok.github.io/cure-script/)
 - [hirigana chart](https://files.tofugu.com/articles/japanese/2016-04-05-hiragana-chart/hiragana-chart-by-tofugu.jpg)
 
-## Grammar from the Cure Dolly lessons
+# Grammar from the Cure Dolly lessons
 
-### 3 basic types of sentences
-
-#### A does B
+## A does B
 
 To indicate the subject of the sentence, we add `ga` :span[が]{.jp} after it. The verb goes at the end of the sentence.
 
@@ -28,7 +26,7 @@ To indicate the subject of the sentence, we add `ga` :span[が]{.jp} after it. T
 - さくらがあるく。
 :::
 
-### A is B (copula)
+## A is B (copula)
 
 `da` :span[だ]{.jp} tells us that A is B.
 
@@ -37,7 +35,7 @@ To indicate the subject of the sentence, we add `ga` :span[が]{.jp} after it. T
 - さくらが日本人だ。
 :::
 
-### A is B (adjective)
+## A is B (adjective)
 
 Describing words end in `i` :span[い]{.jp}. Also, the purpose of `da` :span[だ]{.jp} is built into this `i`-adjectives.
 
@@ -51,7 +49,7 @@ Describing words end in `i` :span[い]{.jp}. Also, the purpose of `da` :span[だ
 - ペンが赤い。
 :::
 
-### Hiding the subject particle
+## Hiding the subject particle
 
 Sometimes, `ga` :span[が]{.jp} is given no subject and disappears. This makes it an equivalent to the English `it`, with meaning inferred from context.
 This is called the Zeroth pronoun.
@@ -61,7 +59,7 @@ This is called the Zeroth pronoun.
 - ウサギだ!
 :::
 
-### Object particle
+## Object particle
 
 The `o` :span[を]{.jp} particle marks the object of a sentence.
 
@@ -70,11 +68,11 @@ The `o` :span[を]{.jp} particle marks the object of a sentence.
 - 私がけーきを食べる。
 :::
 
-### Topic particle
+## Topic particle
 
 The `wa` :span[は]{.jp} particle introduces a concept as the topic of the sentence.
 
-### Destination in movement
+## Destination in movement
 
 `ni` :span[に]{.jp} points to the destination of a movement.
 
@@ -83,7 +81,7 @@ The `wa` :span[は]{.jp} particle introduces a concept as the topic of the sente
 - 私はさくらにボールを投げる。
 :::
 
-### Continuous actions
+## Continuous actions
 
 To actually speak proper Japanese, we don't say verbs in the infinitive.
 As such, we use the verbs `iru` :span[いる]{.jp} (animate) or `aru` :span[ある]{.jp} (inanimate), and change the verb appropriately. This, however, depends on the verb class.
@@ -93,7 +91,7 @@ As such, we use the verbs `iru` :span[いる]{.jp} (animate) or `aru` :span[あ�
 - 食べるいる、歩いている
 :::
 
-### Past
+## Past
 
 Just add `ta` :span[た]{.jp} at the end of the conjugation form.
 
@@ -102,7 +100,7 @@ Just add `ta` :span[た]{.jp} at the end of the conjugation form.
 - いぬが食べる。いぬが食べた。
 :::
 
-### Relative time expressions
+## Relative time expressions
 
 To make it clear we're talking about the future, we can add a time expression at the start of the sentence. It does not need a particle if it's relative.
 
@@ -113,16 +111,58 @@ To make it clear we're talking about the future, we can add a time expression at
   明日ケーキをたべる。
 :::
 
-### Absolute time expressions
+## Absolute time expressions
 
 However, if it is an absolute time, then it requires a `ni` :span[に]{.jp} particle.
 
 - Tuesday, I'll eat a cake.
 :::t-jp
-- 火曜日たケーキを食べる。
+- 火曜日にケーキを食べる。
 :::
 
-## Hirigana
+## Verb groups
+
+### Ichidan
+
+Morphing is easy, just switch out the `ru` :span[る]{.jp}.
+Ichidan verbs always end in :span[いる・える]{.jp}.
+
+To conjugate, just remove the る.
+
+### Godan
+
+The largest verb group. These always end in :span[う]{.jp}.
+There is some ambiguity as to when verbs are Ichidan vs Godam. This will be covered later.
+
+To conjugate, it dewpends on the last mora:
+
+:::t-jp
+
+- う、つ、る -> つて
+- ぬ、ぷ、む -> んで
+- く         -> いて
+- ぐ         -> いで
+- す         -L して
+
+:::
+
+### Irregular
+
+There are two irregular verbs: :span[来る・する]
+
+To conjugate:
+
+:::t-jp
+
+- くる -> きて
+- する -> して
+- いく -> いって*
+
+:::
+
+* note that this verb isn't technically irregular, but it does cunjugate differently, it's not いいて.
+
+# Hirigana
 
 :::t-jp
 
@@ -145,6 +185,8 @@ However, if it is an absolute time, then it requires a `ni` :span[に]{.jp} part
 - n: ん
 
 :::
+
+# Writing
 
 ## Sentences
 
