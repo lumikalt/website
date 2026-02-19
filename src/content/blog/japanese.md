@@ -72,15 +72,54 @@ The `o` :span[を]{.jp} particle marks the object of a sentence.
 
 ### Topic particle
 
-The `wa` :span[は]{.jp} particle introduces a name as the topic of the sentence.
+The `wa` :span[は]{.jp} particle introduces a concept as the topic of the sentence.
 
-### Indirect object
+### Destination in movement
 
-`ni` :span[に]{.jp} introduces an indirect object.
+`ni` :span[に]{.jp} points to the destination of a movement.
 
 - As for me, I throw a ball at Sakura.
 :::t-jp
 - 私はさくらにボールを投げる。
+:::
+
+### Continuous actions
+
+To actually speak proper Japanese, we don't say verbs in the infinitive.
+As such, we use the verbs `iru` :span[いる]{.jp} (animate) or `aru` :span[ある]{.jp} (inanimate), and change the verb appropriately. This, however, depends on the verb class.
+
+- to walk, to eat
+:::t-jp
+- 食べるいる、歩いている
+:::
+
+### Past
+
+Just add `ta` :span[た]{.jp} at the end of the conjugation form.
+
+- The dog will eat. The dog ate.
+:::t-jp
+- いぬが食べる。いぬが食べた。
+:::
+
+### Relative time expressions
+
+To make it clear we're talking about the future, we can add a time expression at the start of the sentence. It does not need a particle if it's relative.
+
+- I will eat a cake. \
+  I will eat a cake tomorrow.
+:::t-jp
+- 私はケーキをたべる。\
+  明日ケーキをたべる。
+:::
+
+### Absolute time expressions
+
+However, if it is an absolute time, then it requires a `ni` :span[に]{.jp} particle.
+
+- Tuesday, I'll eat a cake.
+:::t-jp
+- 火曜日たケーキを食べる。
 :::
 
 ## Hirigana
@@ -105,10 +144,6 @@ The `wa` :span[は]{.jp} particle introduces a name as the topic of the sentence
 
 - n: ん
 
-### Details
-
-
-
 :::
 
 ## Sentences
@@ -118,8 +153,8 @@ The `wa` :span[は]{.jp} particle introduces a name as the topic of the sentence
 - これは日本語の本です。
   - This is a Japanese book.
 
-- A「これは何ですか。」\
-  B「本です。」
+- A「これは何ですか」\
+  B「本です」
   - A: What is this? \
     B: It's a book.
 
@@ -139,6 +174,8 @@ The `wa` :span[は]{.jp} particle introduces a name as the topic of the sentence
 - <ruby>本<rt>ほん</rt></ruby>
 - <ruby>本<rt>ほん</rt></ruby>
 - <ruby>小説<rt>しょうせつ</rt></ruby>
+- <ruby>食細胞<rt>しょくさいほう</rt></ruby>
+- <ruby>好中球<rt>こうちゅうきゆう</rt></ruby>
 
 ### Names
 
