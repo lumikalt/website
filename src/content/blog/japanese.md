@@ -134,33 +134,260 @@ To conjugate, just remove the る.
 The largest verb group. These always end in :span[う]{.jp}.
 There is some ambiguity as to when verbs are Ichidan vs Godam. This will be covered later.
 
-To conjugate, it dewpends on the last mora:
+To conjugate, it depends on the last mora:
 
 :::t-jp
 
-- う、つ、る -> つて
-- ぬ、ぷ、む -> んで
+- う、つ、る -> って
+- ぬ、ぶ、む -> んで
 - く         -> いて
 - ぐ         -> いで
-- す         -L して
+- す         -> して
 
 :::
 
 ### Irregular
 
-There are two irregular verbs: :span[来る・する]
+There are two irregular verbs: :span[来る・する]{.jp}
 
 To conjugate:
 
 :::t-jp
 
-- くる -> きて
+- 来る -> 来て
 - する -> して
 - いく -> いって*
 
 :::
 
-* note that this verb isn't technically irregular, but it does cunjugate differently, it's not いいて.
+\* Note that this verb isn't technically irregular, but it does cunjugate differently, it's not いいて.
+
+For :span[来る]{.jp}, the negative becomes :span[こない]{.jp}.
+
+## Adjectives
+
+### :span[い]{.jp}-adjectives
+
+:::t-jp
+
+ペンが赤い。
+-> 赤いペンがー。
+
+:::
+
+Note that, while the first is a full sentence on its own ("the pen is red"), the second just means "red pen".
+
+- The red pen is small.
+:::t-jp
+- 赤いペンがちいさい。
+:::
+
+### Verbs as adjectivess
+
+Any verb in any tense can be used as an adjective.
+
+- The girl sang.
+- The girl who sang ...
+
+:::t-jp
+- 少女が歌った。
+- 歌った少女がー。
+:::
+
+In fact, entire verb sentences can be used as adjectivals.
+
+- The dog ate the dictionary.
+- The dog that ate the dictionary ...
+- The dictionary that was eaten by the dog ...
+- The dog that ate the dictionary is naughty.
+
+:::t-jp
+- 犬がじしょを食べた。
+- 辞書を編む食べた犬がー。
+- 犬が食べたじしょがー。
+- じしょをたべた犬がやんちだ。
+:::
+
+## Adjectival nouns as adjectives
+
+What about copula sentences? These require changing the :span[だ]{.jp} into :span[な]{.jp}
+
+- The dog is naughty.
+- The naughty dog is sleeping.
+
+:::t-jp
+- 犬がやんちだ。
+- やんちな犬が寝ている。
+:::
+
+However, not all nouns allow this, Only some nouns, also known as :span[な]-adjectives, permit this usage.
+
+Also, these nouns are not proper-nouns, they can't be by themselves. They can't be subjects.
+It's simply that they either take a copula or become adjectives, despite looking like normal nouns.
+
+## Arbitrary names as adjectives
+
+For names that aren't :span[な]{.jp}-adjectives, we use :span[の]{.jp}.
+
+In the possessive case, it works like the Engish "'s":
+
+- Sakura's dress
+:::t-jp
+- さくらのドレス
+:::
+
+But we can use it to state that something is part of some conceptual class.
+
+- Pink dress (lit. dress belonging to the class of pink things)
+:::t-jp
+- ピンクのドレス。
+:::
+
+## Negative
+
+### Is-not sentences
+
+The basis of negation is the adjective :span[ない]{.jp} "not-be, not-exist".
+
+- This is not a pen.
+:::t-jp
+- これはペンではない。
+:::
+
+### Verbs
+
+To negate a verb, attach :span[ない]{.jp} to the :span[あ]{.jp}-stem.
+
+What this means is that we shift the last mora of the verb from the :span[う]{.jp}-stem to the :span[あ]{.jp}-stem.
+
+:::t-jp
+
+- 聞く -> 聞か
+- 話す -> 話さ
+- 持つ -> 持た
+
+:::
+
+However, verbs ending in :span[う]{.jp} change to :span[わ]{.jp}, not :span[あ]{.jp}.
+
+Of course, for ichidan verbs, they just drop the -:span[る]{.jp}, so :span[食べる -> 食べない]{.jp}.
+
+### Adjectives
+
+Adjective stems: to transform adjectives, turn the -:span[い]{.jp} into -:span[く].
+
+So, the て-form of adjectives turns あかく into あかくて.
+Then, forming the negative is similar to before, あかい becomes あかくない.
+
+### Adjectives in the past tense
+
+Likewise, to put an adjective into the past tense, take off the -い and add -かった.
+
+- Sakura doesn't run.
+- Sakura ran.
+- Sakura was running.
+- Sakura wasn't running.
+
+- サクラが走らない。
+- サクラがはしった。
+- サクラがはしっていた。
+- サクラがはしっていなかった。
+
+### Exceptions
+
+The only real exception is ます, a helper verb to make words polite. We add it to the い-stem of a verb.
+
+So, はなす becomes はなします, きく becomes ききます, etc.. But ます becomes ません, not まさない.
+
+This is because it uses the old Japanese negative せん instead of ない.
+
+The only other apparent exception is いい, which has an older form よい. When we transform いい, it reverts to よい, so the past tense becomes よかった, not いかった.
+
+## い-stem
+
+Note: ichigan verbs just lose the る.
+
+### ます
+
+Helper verb to make words polite.
+
+### たい
+
+たい means "want", so it can attach to the い-stem of a verb.
+
+買たい is "want to buy", 聞きたい is "want to hear", etc..
+
+### Converting verbs into nouns
+
+We can use the い-row sticky stem for attaching nouns in order to convert a verb into a new noun.
+
+食べる "eat" -> 食べもの "eat-thing, food"
+
+## あ-stem
+
+Vide い-stem for ichigan. う -> わ.
+
+### ない
+
+The helper verb ない, as stated previously, negates the verb.
+
+話す "to talk" -> 話さない "to not talk"
+
+### Causative
+
+Causative means allowing someone to do something, or making them do something.
+
+It's formed by attaching the helper verb せる, or させる for ichidan.
+
+買う "to buy" -> 買わせる "allow to buy, make to buy"
+
+たべる "to eat" -> 食べさせる "allow to eat, make to eat"
+
+### Receptive / passive
+
+To form the receptive, use the helper verb れる/られる.
+
+聞く "hear" -> 聞かれる "get heard"
+
+## え-stem
+
+### Potential
+
+The え-row is used to form the potential ("can do X" as in it's possible, able to do X) with the helper verb る/られる.
+
+- 買える → can buy
+- 食べられる → can eat
+
+## お-stem
+
+### Volitional
+
+Attaching う/よう puts the verb in the volitional. きく → 聞こう ("let's listen"), 食べる → 食べよう ("let's eat").
+
+One peculiarity is with verb+ます. To make it into the volitional, use the い-stem on the verb plus ましょう. いきましょう, let's go.
+
+## に marks the target
+
+I threw the ball at Sakura. サクラにボールを投げる。
+I'm going to the park. 公園に行く。
+
+### Multiple targets
+
+I go to the store to buy eggs. お店に卵を買いに行く。
+Note the い-stem turning the verb "to buy" into a noun, so 買いに行く means "go in order to buy"
+
+## へ marks destinations
+
+The particle へ can take に's place in sentences of the type A is going to B. Not where it has been or is currently, where it's going.
+
+## The で particle
+
+に marks where something is. Meanwhile, で marks where it's being done, or with what it's being done with.
+
+I'm in the park. 公園にいる。
+I'm playing in the park. 公園で遊んでいる。
+
+---
 
 # Hirigana
 
@@ -207,14 +434,6 @@ To conjugate:
 
 :::t-jp
 
-- <ruby>好<rt>す</rt></ruby>き
-- <ruby>人<rt>ひと</rt></ruby>
-- いい
-- <ruby>日本人<rt>ひにほんじ</rt></ruby>
-- <ruby>日本語<rt>にほんご</rt></ruby>
-- <ruby>勉強<rt>べんきよう</rt></ruby>
-- <ruby>本<rt>ほん</rt></ruby>
-- <ruby>本<rt>ほん</rt></ruby>
 - <ruby>小説<rt>しょうせつ</rt></ruby>
 - <ruby>食細胞<rt>しょくさいほう</rt></ruby>
 - <ruby>好中球<rt>こうちゅうきゆう</rt></ruby>
@@ -225,13 +444,5 @@ To conjugate:
 - <ruby>凪咲<rt>なぎさ</rt></ruby> - Nagisa
 
 - <ruby>人形化現象<rt>にんぎょうかげんしょう</rt></ruby> - dollification phenomenon
-
-### Pronouns
-
-- <ruby>私<rt>わたし</rt></ruby>
-- あなた
-- 彼
-
-- さん
 
 :::
