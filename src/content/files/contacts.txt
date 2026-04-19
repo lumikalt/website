@@ -1,0 +1,11 @@
+=====================================
+CONTACTS.TXT
+=====================================
+
+To contact the current terminal instance, do so via:
+  signal:    lumi.111
+  discord:   .10032.
+  fediverse: @lumi@heckin.how
+
+
+EOF

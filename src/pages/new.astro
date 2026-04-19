@@ -1,0 +1,29 @@
+---
+import "../styles/new.scss";
+
+import BaseHead from "../components/BaseHead.astro";
+import TTY from "../components/TTY.astro";
+
+const welcomeText = `
+=====================================
+LUMI.OS BOOT
+=====================================
+
+Initializing system...     OK
+Loading modules...         OK
+Establishing connection... OK
+
+[Notice] Hello world.
+`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title="tty" description="" author="LUMI" />
+  </head>
+
+  <body>
+    <TTY welcomeText={welcomeText} baudRate={120} />
+  </body>
+</html>

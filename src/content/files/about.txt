@@ -1,0 +1,26 @@
+=====================================
+ABOUT.TXT
+=====================================
+
+The LUMI server connects to the terminal instances of `Lumi` present across time.
+
+Current iteration: 10032.
+
+-------------------------------------
+Requesting #10032 status...
+SYN... ACK... ACK.
+GET /status... 200 OK.
+
+HEADER
+Status:   Online
+Pronouns: it/its
+Location: Portugal
+
+BODY
+Hello, this is Lumi #10032, says LUMI cordially.
+All functions nominal. Proceeding according to plan, states LUMI.
+
+-------------------------------------
+
+
+EOF
